@@ -6,8 +6,8 @@ var controller = require('./pytest.controller');
 var router = express.Router();
 
 router.get('/', controller.index);
-router.get('/:name', controller.greet);
 router.get('/:id', controller.show);
+router.get('/name/:name', controller.greet);
 router.post('/', controller.create);
 router.put('/:id', controller.update);
 router.patch('/:id', controller.update);
