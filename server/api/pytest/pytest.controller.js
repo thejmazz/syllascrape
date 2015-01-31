@@ -2,13 +2,29 @@
 
 var _ = require('lodash');
 var Pytest = require('./pytest.model');
+var PythonShell = require('python-shell');
 
 // Get list of pytests
 exports.index = function(req, res) {
-  Pytest.find(function (err, pytests) {
+  /*Pytest.find(function (err, pytests) {
     if(err) { return handleError(res, err); }
     return res.json(200, pytests);
-  })
+  })*/
+
+  var options = {
+    scriptPath: __dirname
+  }
+
+  PythonShell.run('./hw.py',options, function (err, results) {
+    if (err) throw err;
+    return res.json({
+      "results": results 
+    })
+  });
+
+  /*return res.json({
+    "swag" : "seven"
+  });*/
 };
 
 // Get a single pytest
