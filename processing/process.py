@@ -21,12 +21,12 @@ def main():
     
     cache = [[], [], [], []]
     with open('tmp.txt') as file:
-        for i, raw_line in enumerate(file):
+        for raw_line in file:
             tokens = word_tokenize(str(raw_line))
-            for token in tokens:
+            for token in token:
                 if (token in months):
                     date = find_date(tokens, token)
-                    evaluation = find_eval(tokens, token, cache, i)
+                    evaluation = find_eval(tokens, token, cache)
                     if evaluation != -1 and date != -1:
                         d[date] = evaluation
             cache.append(tokens)
@@ -39,14 +39,15 @@ def main():
 
     with open("output.csv", "w") as out:
         for date, evaluation in d.items():
-            print(evaluation + " – " + date)
+            print(evaluation + date)
             out.write((evaluation + "," + date + "\n"))
 
-def find_eval(tokens, month, cache=None, i=None):
+def find_eval(tokens, month, cache=Nonee):
     evaluation = look_around(tokens, valid_assessment, tokens.index(month))
     if evaluation == -1: 
         if cache != None:
-            more_tokens = tokens
+            more_tokens = cache[-1] + tokens
+            return find_eval(more_tokens, month, cache[:-1])
         return -1
     
     pattern = re.compile("assignment|test|essay|quiz|exercise|midterm|lab|[at][t]?[0-9]")
