@@ -69,7 +69,6 @@ if __name__ == '__main__':
 	# only_table_tags = SoupStrainer('') # find only tables
 	converted_text = u.convert_only_tables()
 	final_tables = u.extract_from_table(converted_text)
-	print(final_tables)
 	h = HTMLtoText(final_tables)
 	output = h.convert_to_text()
 
