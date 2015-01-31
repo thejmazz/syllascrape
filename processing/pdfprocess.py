@@ -1,9 +1,10 @@
 import os
 import sys
-import urllib.request
+import urllib2
+
 
 if len(sys.argv) == 3 and sys.argv[1] == '-u':
-    urllib.request.urlretrieve(sys.argv[2], 'tmp.pdf')
+    response = urllib2.urlretrieve(sys.argv[2], 'tmp.pdf')
     filename = 'tmp.pdf'
 elif len(sys.argv) == 3:
 	print("Invalid option.")
