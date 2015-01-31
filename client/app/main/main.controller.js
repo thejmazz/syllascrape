@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('syllascrapeApp')
-  .directive('angularFileUpload', function($scope, $upload){
-     
-  })
+  //.directive('angularFileUpload')
   .controller('MainCtrl', function ($scope, $http) {
     $scope.awesomeThings = [];
+
+    //$scope.uploader = new FileUploader();
 
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
