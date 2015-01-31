@@ -72,7 +72,7 @@ if __name__ == '__main__':
 	h = HTMLtoText(final_tables)
 	output = h.convert_to_text()
 
-	f = open('temp.txt', 'w')
+	f = open('tmp.txt', 'w')
 	print(output, file=f)
 
 
