@@ -1,0 +1,17 @@
+ Email: reid -at- cdf.toronto.edu
+ Office hours: TBA
+ Lectures: L0101 Mondays and Wednesdays 12-1 MP 203
+   L5101 Wednesdays 6-8pm BA 1130
+ Email: bogdan -at- cs.toronto.edu
+ Office hours: BA4261, M11-12, W11-12
+ Lectures: L0201 Mondays and Wednesdays 10-11 am WI 1016
+
+Type of Work Topics WeightDue date
+ Exercises   4% 10pm on the Fridays
+ A1 Basic C  8% Thursday Jan 29
+ A2 C and pointers  10% Thursday Feb 26
+ Midterm Shell and C  15% Wednesday March 4
+ A3 Mini Shell  10% Monday March 16
+ A4 Network Server  8% Thursday April 2
+ Final Exam Everything  45% See exam schedule
+
