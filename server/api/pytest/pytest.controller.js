@@ -6,24 +6,26 @@ var PythonShell = require('python-shell');
 
 // Get list of pytests
 exports.index = function(req, res) {
-  /*Pytest.find(function (err, pytests) {
-    if(err) { return handleError(res, err); }
-    return res.json(200, pytests);
-  })*/
-
   var options = {
     scriptPath: __dirname
-  }
+  };
 
   PythonShell.run('./hw.py',options, function (err, results) {
     if (err) throw err;
-    return res.json({
+    return res.json(200, [{
       "results": results 
-    })
+    }])
   });
+  /*var options = {
+    scriptPath: __dirname,
+    args: [req.params.name]
+  };
 
-  /*return res.json({
-    "swag" : "seven"
+  PythonShell.run('./greet.py', options, function(err, results) {
+      if (err) throw err;
+      return res.json(200, [{
+        "output" : results
+      }]);
   });*/
 };
 
@@ -33,6 +35,20 @@ exports.show = function(req, res) {
     if(err) { return handleError(res, err); }
     if(!pytest) { return res.send(404); }
     return res.json(pytest);
+  });
+};
+
+exports.greet = function(req, res) {
+  var options = {
+    scriptPath: __dirname,
+    args: [req.params.name]
+  };
+
+  PythonShell.run('./greet.py', options, function(err, results) {
+      if (err) throw err;
+      return res.json(200, [{
+        "output" : results
+      }]);
   });
 };
 
