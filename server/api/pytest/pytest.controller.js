@@ -52,6 +52,20 @@ exports.greet = function(req, res) {
   });
 };
 
+exports.scrapUrl = function(req, res) {
+  var options = {
+    scriptPath: __dirname,
+    args: [req.body.url]
+  };
+
+  PythonShell.run('/htmltotext.py', options, function(err, results) {
+    if (err) throw err;
+    return res.json(200, [{
+      "output": results
+    }]);
+  });
+}
+
 // Creates a new pytest in the DB.
 exports.create = function(req, res) {
   Pytest.create(req.body, function(err, pytest) {
