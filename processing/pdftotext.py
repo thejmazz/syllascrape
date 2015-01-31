@@ -3,4 +3,4 @@ import sys
 
 filename = sys.argv[1]
 
-os.system("pdftotext -raw " + filename + " pdfoutput.txt")
+os.system("pdftotext -raw -enc UTF-8 " + filename + " pdfoutput.txt")

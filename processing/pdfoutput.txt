@@ -1,83 +1,155 @@
-CSC148, Winter 2015
-course information sheet
-CSC148, "Introduction to Computer Science," introduces you to how our discipline thinks in a systematic
-way about computing. Our hope is to provide you the basics for approaching program design principles
-such as encapsulation, modularity, and information-hiding, comparing different program implementations
-for efficiency, and building powerful data structures. Here's a summary of the administrative details for
-Winter 2015. Please visit the course web page http://www.cdf.toronto.edu/~csc148h/winter/ often,
-and read email sent to your U of T email for important announcements.
-Contact: Each week, other than reading week (February 16th­20th), we'll meet
-Lecture 0101: Mondays and Wednesdays, 9­10 a.m., WB116 (Wallberg Building), instructor Diane
-Horton
-Lecture 0201: Mondays and Wednedays, 10­11 a.m., WB116 (Wallberg Building), instructor Danny
-Heap
-Lecture 5101: Wednesdays, 6­8 p.m., MS3153 (Medical Science Building), instructor Danny Heap
-. . . for discussion and worked examples. If you have questions that aren't answered in class, Danny's
-office hours are in BA4270 Mondays and Wednesdays 11:30­1:30. Diane's office hours are Mondays
-and Tuesdays, 3­4 p.m. in BA4236.
-Textbook and computing: We'll provide slides and links to readings online relevant to our weekly topics. By
-virtue of registering in this course, you will have a CDF account, and it is vitally important that you
-set it up so that you are able to log in. Your CDF account provides computing resources both remotely
-and within the Bahen building, and it allows you to submit course work.
-Syllabus: We'll discuss the following topics:
- modularity, encapsulation, information-hiding, object oriented design
- recursive data structures and recursive programming techniques
- traversal and mutation of linked data structures, including trees
- efficiency, profiling
- algorithms, sorting
-Marking scheme: The marking scheme is designed to place a low weight (40%) on the final exam, since
-we believe this reduces a potential source of stress for students. In order to do this, we have to
-introduce frequent-but-smaller sources of stress: ten (nearly-weekly) labs, a courSe bLOG (SLOG),
-three assignments, and two term tests. These are timed, and weighted, as follows:
-1
-Work Due Weight
-10 labs every week except week 1 and week 12 10%
-SLOG and three assignments
-SLOG, week 3 ­ end of course
-32%
-A1, January 29th, 10 p.m.
-A2, March 5th, 10 p.m.
-A3, April 2nd, 10 p.m.
-two term tests
-T1, February 4th, during lecture time
-18%
-T2, March 11th, during lecture time
-Final exam some time in April 40%
-Nuances: Everybody has better and worse days. We aim to give higher weight to your better work.
-For example, the weights of the assignments and SLOG sum to 32%, so we will give your best work
-on these three a weight of 10%, and your worst work a weight of 6%, with your middling work getting
-weights of 9% and 7%, respectively. Similarly, the term tests sum to 18%, so your best effort will
-have weight 10% and your lesser effort will have weight 6%, and there is 1% per test for completing a
-test-review exercise. The 40% weight of the final is, however, not changeable.
-In addition to the other requirements, must you achieve 40% of the marks on the final exam in order
-to pass this course.
-Re-marks: It is very important to us that your work is evaluated correctly, and that occasionally includes
-re-marking work to see whether we agree with the original grading. On the other hand, there are often
-urgent tasks during the semester that require our attention ahead of re-marks, for example preparing
-the next lecture, assignment, test...
-Here is how we propose to balance importance and urgency. All re-mark requests must be submitted
-on MarkUs within 7 days of when the relevant work is handed back. We promise to consider the
-request before we submit grades at the end of the course.
-Lateness, sickness, natural disasters: We discourage late work, since we have to arrange in advance for grading
-it, and because we want to be able to discuss solutions soon after the assignment is due, while it is still
-fresh in everyone's minds. Late assignments will be penalized at the rate of 5% per hour. If you have
-special circumstances that force you to miss a deadline, please contact us immediately (usually before
-the work is due) and fill out either the "Request for special consideration," or the standard medical
-excuse form (link on course web page) and provide all supporting documentation. We will do our best
-to ensure that your evaluation is not harmed by events that are not your fault.
-Independent work: It is a serious academic offense to pass off somebody else's work as your own for credit.
-Be sure to give full and generous credit to any person or book (except course instructors and teaching
-assistants) you consult in solving assignments. If you take notes when you consult a source, quote that
-source in full.
-If you intend to present work as your own, for credit, then you should not look at similar work by
-other students, in written or electronic form, since looking can easily turn into plagiarism. Don't show
-your own assignments to other students. Take a couple of hours' break after even verbal discussions
-of the assignment before writing it up.
-Email, piazza: Course instructors receive thousands of emails per month, which makes it hard to ensure that
-each piece is followed up on promptly. You should use email to instructors sparingly.
-Use piazza (see course web page) for questions and answers that don't reveal the details of assign-
-ments. Use MarkUs to request (non-test) re-marks and special consideration. Test re-marks need to
-be presented on paper (form on course web site), stapled to the test, to your instructor.
-If you have a question that can't be raised on piazza and is suitable for email, be sure to include
-"CSC148," and something about your question, in the Subject: line.
+BCH311H - Biochemistry II: Nucleic Acids and Biological Information Flow
+Winter 2014-2015
+Coordinator and Lecturer: S. Andreopoulos
+Office: Medical Sciences Building, Room 5219
+e-mail: s.andreopoulos@utoronto.ca
+Office Hours: Fridays 8:00-10am
+Lecturers: S. Kelley
+e-mail: shana.kelley@utoronto.ca
+G. Brown
+e-mail: grant.brown@utoronto.ca
+Teaching Assistants: Gregory Cole
+e-mail: gregory.cole@utoronto.ca
+Mandeep Kaur Gill
+e-mail: mk.gill@mail.utoronto.ca
+Lectures: Con Hall, Fri 10 amâ€“ 12 pm
+Tutorials: Thursday: Medical Sciences Building 2158, 1-2 pm
+Friday: Con Hall, 1-2 pm
+Academic Integrity: We would like to encourage you to practice honest and respectful behaviour in
+keeping with the University of Torontoâ€™s Code of Behaviour on Academic Matters: â€œThe concern of the
+Code of Behaviour on Academic Matters is with the responsibilities of all parties to the integrity of the
+teaching and learning relationship, whose basis remains one of mutual respect for the aims of education
+and for those ethical principles which must characterize the pursuit and transmission of knowledge in the
+Universityâ€.
+Course Description: This 12-week course covers the basics of nucleic acids and flow of information in
+biological systems, There is a major focus on information storage and transmission, as well discussion on
+new molecular technologies available.
+Prerequisites: The prerequisite for the course is BCH210H (or equivalent credit). If this credit does not
+appear on your ROSI record please contact Dr. Andreopoulos NO LATER than January 23rd, 2015 to
+ensure your registration is maintained.
+Course Conflicts with Exam Dates: If you have a UofT course conflict with ONE or BOTH term test
+dates, you will need to inform Dr. Andreopoulos of this NO LATER than January 23rd, 2015, 5pm.
+There are NO exceptions to the deadline. All emails must be received from a U of T account and include
+your full name, student number, timetable and your course conflict.
+Student Assessment: There will be two term tests, and a final examination. The first term test, worth
+25% of the course mark, will cover all of Dr. Kelley's material (Lectures 1-4) and be held on Thursday
+February 5th, 2015, 6-7:30 pm. The second term test, worth 25% of the course mark, covers all of Dr.
+Brown's material (Lectures 5-7) and will be held on Thursday March 5th, 2015, 6-7:30 pm. The final
+examination, worth 40% of the course mark, will cover all lectures, with more focus placed on Dr.
+Andreopoulosâ€™ material (Lectures 8-end). Students must check that their student numbers are correct and
+that their grades are accurate when grades are released. Any discrepancies or problems with exam results
+must be resolved BEFORE classes end. Any questions related to a specific lecture topic should be directed
+to the Professor who gave the lecture.
+Please note that the date for the April exam is arranged by the Faculty of Arts and Science. You cannot
+miss an exam because you have purchased airline tickets, are on holiday etc. This is an intense 12-week
+course, and your enrolment indicates a commitment to the lectures and evaluation process.
+Quizzes - There will be two online quizzes worth 5% each, administered on the BCH311 Blackboard Site.
+The quizzes (multiple choice answer format) will take place on Monday January 26th and Monday March
+16th, 2015. The first quiz will cover the material in Lectures 1-3 while the second quiz will cover material
+in Lectures 8-9. The quizzes will be 10 min long and will include 10 multiple-choice answer questions,
+with either one CORRECT or one INCORRECT choice. Once you start the quizzes online, the system
+will automatically log you off and submit whatever answers have been entered 10 minutes after the initial
+start time.
+Each student will be expected to take the quizzes independently without aids (ie. without notes, textbooks,
+other resources etc.). The web-based quizzes will be available for 24 hours starting on the specified day at
+12 AM Eastern Time Monday morning until 11:59 PM (ET). Students are responsible for arranging their
+schedule to write the quizzes online. If you do not write a quiz, you will receive a grade of 0. NO
+EXCEPTIONS will be made and there will be no makeup quizzes or re-allocation of the marks. The
+discussion board on Blackboard will also not be accessible during the time when the quizzes are in
+progress. Once you have written the quizzes, you may not discuss the questions with anyone. Marks will
+be released the next day once the results of the quizzes have been compiled and analyzed. We cannot help
+you if you have technical difficulties (ie. Wifi connection). If you are unsure of your internet connection,
+computers are available in the libraries to take the quizzes.
+Missed Term Tests: Students who miss either of the term tests MUST ADHERE to the following
+procedure:
+a) You MUST email (using Utoronto email) the Course Coordinator (Dr. Andreopoulos, MSB
+5219) on the DAY of the term test. NO EXCEPTIONS will be considered. Only e-mails from the
+UofT domain will be answered. Do NOT use yahoo/gmail/etc. These sources will be rejected as
+spam.
+b) Provide a valid University of Toronto student medical certificate for the DAY of the test. This
+must be submitted to Dr. Andreopoulos PRIOR to the date of the make-up.
+c) Provide via email a written explanation (no more than 200 words) detailing the reason for missing
+the exam.
+d) Provide via email your student number, course timetable and a list of all other course term work
+due the week of the term test.
+NOTICE: Upon submission of the above [(a)-(d)], students will be informed of the
+date/time/location of the makeup exam (to be held several days after the date of the term test).
+However, once you have written the makeup exam and there are any questionable issues with the
+documentation supplied, a meeting will be arranged with Dr. Andreopoulos to discuss this.
+If a test is NOT WRITTEN, a mark of zero will be assigned. Any student unable to write the final exam
+must contact their college registrar.
+Method of Delivery: The course content will be covered in one 2-hour formal lectures each week (see exact
+schedule on Blackboard for dates and topics), with course notes provided in advance on Blackboard solely
+for personal, noncommercial use. "All material in BCH311 Blackboard is, unless otherwise stated, the
+property of the Department of Biochemistry at the University of Toronto. Copyright and other
+intellectual property laws protect these material. Reproduction or retransmission of the materials, in
+whole or in part, in any manner, without the prior written consent is a violation of copyright
+law.â€ Help session tutorials are provided to assist with your understanding of the course material. Your
+instructors and TAs are available to help, but please be courteous when contacting us via email and donâ€™t
+forget to use the discussion board for general questions. Remember, complex issues may be too time-
+consuming to answer by e-mail; in this case it may be better to resolve these issues by meeting with the
+professor after lecture or during office hours. In addition to lectures and tutorial handouts, additional
+problem sets will be available online to help further your understanding of the material.
+Class Participation: Activities, multiple-choice questions and problem-solving questions will be
+provided in both lectures and tutorials, in order to measure your comprehension of ideas. If you have an
+i>clicker, you are encouraged to bring it to class to participate in these questions, however, they will not
+be used for attendance and no participation marks will be given. Your instructors will provide more
+details on how you can be a part of this class, be more engaged in the material and enjoy learning why
+biochemistry is crucial for life.
+Technology in the classroom: Do feel free to bring your laptops, iPads and handheld devices to class in
+order to take notes and participate, but please only use them in a manner that will not disrupt your fellow
+peers around you. Please do not use your computer for anything other than activities related to this
+biochemistry course when it is underway. Also be sure to turn off your cell phones or put them on silent
+before class begins, and do not text-message during the lecture. You have registered in this course and
+have made a commitment to be engaged and learn the material, so please do try to be focused during
+lectures and problem-solving review sessions. Studies have shown that distractions result in lower grades,
+so do focus on the material when you are present in class.
+Communication throughout the course: You are responsible for accessing all course materials through
+the Blackboard Portal site. Here you will find the lecture notes and discussion board which are set up to
+assess and assist with your understanding of the material. Please feel free to post any questions you may
+have regarding the course on the Discussion Board so that we may share the information with your peers.
+When emailing the TAs directly, please only use your University of Toronto email address. Please
+indicate the nature of your inquiry in the subject line preceded by BCH311H. Please begin your email
+with Dear: and include your full name and student number so that we may be able to best address your
+concern in the utmost respectable manner. Emails to your professors will only be answered during
+business hours, so if you require an immediate response, try asking a classmate. Course-related
+announcements will also be posted on the Blackboard Portal site so please check in regularly.
+Textbook: The readings assigned from the textbook are required. Biochemistry, First Canadian Edition,
+R.H. Garrett, C.M. Grisham et al. (2013, Nelson Education) are required. This textbook includes chapter
+questions, which may assist with your understanding of the material, and associated readings and problem
+sets may be assigned.
+The material covered in this course is fundamental to future work you may explore in any field of
+biological science, nutrition, molecular biology, medicine, etc. We hope that you enjoy the course and
+succeed! We are here to assist you in any way possible, but it is your responsibility to keep on top of the
+material. This is a very fast-paced course and your attendance at the lectures is key in assisting your
+understanding of biochemistry, the molecular basis of life. -Sincerely the BCH311H teaching team
+Lecture Schedule 2014-2015
+LEC
+#
+DATE TOPIC LECTURER
+1 Jan 9 Nucleic Acid Structure I Kelley
+2 Jan 16 Nucleic Acid Structure II Kelley
+3 Jan 23 Techniques to Study Nucleic Acids Kelley
+Jan 26 QUIZ (12am -11:59pm)
+4 Jan 30 Overview of Nucleotide Biosynthesis Kelley
+Feb 5 FIRST TERM TEST (6-7:30pm)
+5 Feb 06 DNA Replication I Brown
+6 Feb 13 DNA Replication II Brown
+Feb 17-
+Feb 20
+READING WEEK - no classes
+7 Feb 27 DNA Repair Brown
+Mar 05 SECOND TERM TEST (6-7:30pm)
+8 Mar 06 Transcription I and II Andreopoulos
+Mar 08
+Last Day for Dropping Course Without Academic
+Penalty
+9 Mar 13 Splicing Andreopoulos
+Mar 16 QUIZ (12am -11:59pm)
+10 Mar 20 Translation I Andreopoulos
+11 Mar 27 Translation II Andreopoulos
+Apr 8-30
+FINAL EXAM (3 hours) -Date and
+Location to be Announced by Arts &
+Science
 
