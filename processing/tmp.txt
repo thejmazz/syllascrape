@@ -1,82 +1,81 @@
-CSC148, Winter 2014
-course information sheet
-CSC148, “Introduction to Computer Science,” introduces you to how our discipline thinks in a systematic
-way about computing. Our hope is to provide you the basics for approaching program design principles
-such as encapsulation, modularity, and information-hiding, comparing diﬀerent program implementations
-for eﬃciency, and building powerful data structures. Here’s a summary of the administrative details for
-Winter 2014. Please visit the course web page http://www.cdf.toronto.edu/~heap/148/W14/ often, and
-read email sent to your U of T email for important announcements.
-Contact: Each week, other than reading week (February 17th–21st), we’ll meet
-Lecture 0101: Mondays and Wednesdays, 9–10 a.m., WB116 (Wallberg Building), instructor Danny
-Heap
-Lecture 0201: Mondays and Wednedays, 10–11 a.m., WB116 (Wallberg Building), instructor Danny
-Heap
-Lecture 5101: Wednesdays, 6–8 p.m., MS3153 (Medical Science Building), instructor Dustin Wehr
-. . . for discussion and worked examples. If you have questions that aren’t answered in class, Danny’s
-oﬃce hours are in BA4270 Mondays and Wednesdays 11–noon, and Thursdays 2–4 p.m. Dustin’s oﬃce
-hours are in SF 4306 D on Tuesdays 5–6 p.m. and Wednesdays 2–3 p.m.
-Textbook and computing: We’ll provide slides and links to readings online relevant to our weekly topics. By
-virtue of registering in this course, you will have a CDF account, and it is vitally important that you
-set it up so that you are able to log in. Your CDF account provides computing resources both remotely
-and within the Bahen building, and it allows you to submit course work.
-Syllabus: We’ll discuss the following topics:
- modularity, encapsulation, information-hiding, object oriented design
- recursive data structures and recursive programming techniques
- traversal and mutation of linked data structures, including trees
- eﬃciency, proﬁling
- algorithms, sorting
-Marking scheme: The marking scheme is designed to place a low weight (40%) on the ﬁnal exam, since we
-believe this reduces a potential source of stress for students. In order to do this, we have to introduce
-frequent-but-smaller sources of stress: ten (nearly-weekly) labs, four exercises, a courSe bLOG (SLOG),
-two assignments, two term tests. These are timed, and weighted, as follows:
-1
-Work Due Weight
-10 labs every week except week 1 and week 12 10%
-SLOG and two assignments
-SLOG, week 3 – end of course
-24%
-A1, February 13th, 9:59 p.m.
-A2 part I, March 6th, 9:59 p.m.
-A2 part II, March 20th, 9:59 p.m.
-four exercises
-January 16th, 30th, 9:59 p.m.
-8%
-March 13th, 9:59 p.m.
-April 3rd, 9:59 p.m.
-two term tests
-T1, February 26th, during lecture time
-18%
-T2, March 26th, during lecture time
-Final exam some time during exam period 40%
-Nuances: Everybody has better and worse days. We aim to give higher weight to your better work.
-For example, the weights of the assignments and SLOG sum to 24%, so we will give your best work on
-these three a weight of 10%, and your worst work a weight of 6%, with the remaining piece getting 8%.
-Similarly, the term tests sum to 18%, so your best eﬀort will have weight 11% and your lesser eﬀort
-will have weight 7%. After you have completed the 5th lab, you may choose to replace the remaining 5
-labs shifting those marks to your term tests (which become worth 23% in that case). The 40% weight
-of the ﬁnal is, however, not changeable.
-In addition to the other requirements, must you achieve 40% of the marks on the ﬁnal exam in order
-to pass this course.
-Re-marks: It is very important to us that your work is evaluated correctly, and that occasionally includes
-re-marking work to see whether we agree with the original grading. On the other hand, there are often
-urgent tasks during the semester that require our attention ahead of re-marks, for example preparing
-the next lecture, assignment, test...
-Here is how we propose to balance importance and urgency. All re-mark requests must be submitted
-on MarkUs within 7 days of when the relevant work is handed back. We promise to consider the
-request before we submit grades at the end of the course.
-Lateness, sickness, natural disasters: We don’t accept late work, since we have to arrange in advance for grading
-it, and because we want to be able to discuss solutions soon after the assignment is due, while it is
-still fresh in everyone’s minds. However, if you have special circumstances that force you to miss a
-deadline, please contact us immediately (usually before the work is due) and ﬁll out either the “Request
-for special consideration,” or the standard medical excuse form (link on this web page) and provide all
-supporting documentation. We will do our best to ensure there is no penalty for a deadline missed for
-a valid reason.
-Independent work: It is a serious academic oﬀense to pass oﬀ somebody else’s work as your own for credit.
-Be sure to give full and generous credit to any person or book (except course instructors and teaching
-assistants) you consult in solving assignments. If you take notes when you consult a source, quote that
-source in full.
-If you intend to present work as your own, for credit, then you should not look at similar work by
-other students, in written or electronic form, since looking can easily turn into plagiarism. Don’t show
-your own assignments to other students. Take a couple of hours’ break after even verbal discussions
-of the assignment before writing it up.
-
+
+
+
+
+
+CSC 236H Winter 2015 — Course Homepage
+
+
+
+ 
+
+
+ CSC 236 2015W ; Introduction to the Theory of Computation
+
+
+
+
+ 
+CSC 236
+
+Home page
+Discussion (piazza)
+CSC 236 Course Text
+CSC 165 Course Text
+CSC 165 Practice Questions
+
+
+
+
+Welcome
+Welcome to our Winter 2015 offering of Introduction to the Theory of Computation.
+Instructors
+L0101: Gary Baumgartner gfb@cs.toronto.edu.
+L0301: Dustin Wehr wehr@cs.toronto.edu.
+Office Hours
+Gary: Wednesday 2:30–4:00 and Thursday 3:10–4:00, in BA 4232.
+Dustin: Wednesday 3:10–4:00 in SF 4306 D, and also check the CSC Help Centre calendar.
+CSC Help Centre.
+Lectures
+L0101: Tuesday and Thursday 1:10-2:00 in RW 117.
+L0301: Tuesday and Thursday 3:10-4:00 in LM 161.
+But: Thursdays February 5th and March 12th the time (along with the tutorial time) will be used for a test.
+Tutorials (including Quizzes)
+Start in the 2nd week of classes. In weeks 3, 4, 6, 7 (i.e. the week after Reading Week), 8, 10, 11 and 12
+      there is a 15 minute quiz at the end of the tutorial.
+     Each quiz is worth 2%.
+But: Thursdays February 5th and March 12th the time (along with the lecture time) will be used for a test.
+Week 4: Exercises.
+Week 3: Exercises.
+Week 2: Exercises.
+L0101: Thursday 2:10-3:00 in a room TBA.
+L0301: Thursday 4:10-5:00 in a room TBA.
+Assignments
+Three of them, worth 10% each, due 6PM on Monday February 2nd [was: Friday January 30th], Friday March 6th, and Thursday April 2nd.
+Assignment 1.
+Tests
+Two of them, worth 8% and 12%, with the one you do better on worth 12%.
+L0101: Thursday February 5th and Thursday March 12th, 1:10-3:00, in a room TBA.
+L0301: Thursday February 5th and Thursday March 12th, 3:10-5:00, in a room TBA.
+Exam
+In the exam period April 8–30. Worth 34%.
+Pre-Requisites, and Ramp-Up Session(s)
+The pre-requisites for the course are CSC148 and CSC165.
+The main material from CSC148 that we rely on is a solid understanding of recursion and recursive data-structures
+      (such as trees).
+     The material from CSC165 that we rely on is all of it!
+     If you understood that material well, you are well-prepared for this course.
+On the other hand, if you achieved less than a C in CSC165, you will
+       likely find the material we present in CSC236 unreasonably challenging,
+       requiring more remedial work than you can combine with other responsibilities this semester.
+      Some of you have a CSC165 transfer credit, or a waiver based on other "similar" courses,
+       or you might not have taken CSC165 recently and have forgotten some of it.
+      Take a look at the CSC165 Practice Questions,
+       especially the sections on "Sequences" and "General Proofs": can you easily develop the structure of a proof based
+       on the structure of the statement being proved (and vice-versa).
+      Also, take a look at last term's CSC236 Assignment 0 that was on some of the CSC165 material.
+If you are concerned about whether you are ready for this course, there is a "ramp up"
+       session being introduced (similar in spirit to the CSC148 "ramp up") on the CSC165 material:
+       e-mail us at csc236-rampup@cs.toronto.edu with your CDF ID and whether you can attend
+       if we were to schedule a session this Saturday January 10th from 10AM–4PM,
+       and/or next Saturday January 17th from 10AM–4PM.

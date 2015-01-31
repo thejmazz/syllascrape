@@ -8,7 +8,7 @@ October,November,December,Jan,Feb,Mar,Apr,Jun,Jul,Aug,Sep,Oct,Nov,Dec".split(","
 
 
 def main():  
-    if not (2<= len(sys.argv) <= 3):
+    if not (2 <= len(sys.argv) <= 3):
         print("Invalid argument.")
         sys.exit()
 
@@ -19,11 +19,11 @@ def main():
         print("Invalid option.")
         sys.exit()
     
-    cache = [[], [], [], []]
+    cache = [[], [], []]
     with open('tmp.txt') as file:
         for raw_line in file:
             tokens = word_tokenize(str(raw_line))
-            for token in token:
+            for token in tokens:
                 if (token in months):
                     date = find_date(tokens, token)
                     evaluation = find_eval(tokens, token, cache)
@@ -33,19 +33,18 @@ def main():
             if len(cache) > 3:
                 cache = cache[1:]
 
-    print(cache)
     if d == {}:
         print("No dates found.")
 
     with open("output.csv", "w") as out:
         for date, evaluation in d.items():
-            print(evaluation + date)
+            print(evaluation + " – " + date)
             out.write((evaluation + "," + date + "\n"))
 
-def find_eval(tokens, month, cache=Nonee):
+def find_eval(tokens, month, cache=None):
     evaluation = look_around(tokens, valid_assessment, tokens.index(month))
     if evaluation == -1: 
-        if cache != None:
+        if cache != None and len(cache) > 0:
             more_tokens = cache[-1] + tokens
             return find_eval(more_tokens, month, cache[:-1])
         return -1
@@ -83,9 +82,6 @@ def find_date(tokens, month):
         day = day[:-2]
     if len(day) == 1:
         day = "0" + day
-
-    if day == "26" and month == "03": print(tokens)
-
 
     return "-".join([month_num, day, year])
 
