@@ -7,24 +7,23 @@ October,November,December,Jan,Feb,Mar,Apr,Jun,Jul,Aug,Sep,Oct,Nov,Dec".split(","
 
 
 def main():
+    
     if len(sys.argv) != 2:
         print("Invalid argument.")
         sys.exit()
 
-    try:
-        file = open(sys.argv[1], "r")
-    except IOError:
-        print("File not found.")
-        sys.exit()
-
-    for raw_line in file:
-        for month in months:
-            if (month in raw_line):
-                tokens = word_tokenize(raw_line)
-                date = find_date(tokens, month)
-                evaluation = find_eval(tokens, month)
-                if evaluation != -1: print(evaluation, "–", date)
-                break
+    out = open("output.csv", "w")
+    with open(sys.argv[1], "r") as file:
+        for raw_line in file:
+            tokens = word_tokenize(raw_line)
+            for token in tokens:
+                if (token in months):
+                    date = find_date(tokens, token)
+                    evaluation = find_eval(tokens, token)
+                    if evaluation != -1:
+                        print(evaluation, "–", date)
+                        out.write((evaluation + " , " + date + "\n"))
+                    
 
 def find_eval(tokens, month):
     evaluation = look_around(tokens, valid_assessment, tokens.index(month))
@@ -42,7 +41,12 @@ def find_date(tokens, month):
     Takes a line of input and the found month and returns the date
     '''
 
-    day = look_around(tokens, valid_date, tokens.index(month))
+    try:
+        day = look_around(tokens, valid_date, tokens.index(month))
+        if day == -1: return -1
+    except ValueError:
+        print(tokens)
+        return -1
 
     month_abreviations = {("Jan", "January"): "01", ("Feb", "February"): "02", ("Mar", "March"): "03", ("Apr", "April"): "04", ("May"): "05", ("Jun", "June"): "06", ("Jul", "July"): "07", ("Aug", "August"): "08", ("Sep", "September"): "09", ("Oct", "October"): "0100", ("Nov", "November"): "0101", ("Dec", "December"): "0102"}
 
@@ -94,7 +98,7 @@ def valid_date(token):
         
 def valid_assessment(token):
 
-    pattern = re.compile("assignment|test|essay|quiz|exercise|midterm|lab|a[0-9]")
+    pattern = re.compile("assignment|test|essay|quiz|exercise|midterm|lab|[at][t]?[0-9]")
     return (pattern.match(token.lower()) != None)
 
 if __name__ == '__main__':

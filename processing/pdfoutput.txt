@@ -1,0 +1,83 @@
+CSC148, Winter 2015
+course information sheet
+CSC148, "Introduction to Computer Science," introduces you to how our discipline thinks in a systematic
+way about computing. Our hope is to provide you the basics for approaching program design principles
+such as encapsulation, modularity, and information-hiding, comparing different program implementations
+for efficiency, and building powerful data structures. Here's a summary of the administrative details for
+Winter 2015. Please visit the course web page http://www.cdf.toronto.edu/~csc148h/winter/ often,
+and read email sent to your U of T email for important announcements.
+Contact: Each week, other than reading week (February 16th­20th), we'll meet
+Lecture 0101: Mondays and Wednesdays, 9­10 a.m., WB116 (Wallberg Building), instructor Diane
+Horton
+Lecture 0201: Mondays and Wednedays, 10­11 a.m., WB116 (Wallberg Building), instructor Danny
+Heap
+Lecture 5101: Wednesdays, 6­8 p.m., MS3153 (Medical Science Building), instructor Danny Heap
+. . . for discussion and worked examples. If you have questions that aren't answered in class, Danny's
+office hours are in BA4270 Mondays and Wednesdays 11:30­1:30. Diane's office hours are Mondays
+and Tuesdays, 3­4 p.m. in BA4236.
+Textbook and computing: We'll provide slides and links to readings online relevant to our weekly topics. By
+virtue of registering in this course, you will have a CDF account, and it is vitally important that you
+set it up so that you are able to log in. Your CDF account provides computing resources both remotely
+and within the Bahen building, and it allows you to submit course work.
+Syllabus: We'll discuss the following topics:
+ modularity, encapsulation, information-hiding, object oriented design
+ recursive data structures and recursive programming techniques
+ traversal and mutation of linked data structures, including trees
+ efficiency, profiling
+ algorithms, sorting
+Marking scheme: The marking scheme is designed to place a low weight (40%) on the final exam, since
+we believe this reduces a potential source of stress for students. In order to do this, we have to
+introduce frequent-but-smaller sources of stress: ten (nearly-weekly) labs, a courSe bLOG (SLOG),
+three assignments, and two term tests. These are timed, and weighted, as follows:
+1
+Work Due Weight
+10 labs every week except week 1 and week 12 10%
+SLOG and three assignments
+SLOG, week 3 ­ end of course
+32%
+A1, January 29th, 10 p.m.
+A2, March 5th, 10 p.m.
+A3, April 2nd, 10 p.m.
+two term tests
+T1, February 4th, during lecture time
+18%
+T2, March 11th, during lecture time
+Final exam some time in April 40%
+Nuances: Everybody has better and worse days. We aim to give higher weight to your better work.
+For example, the weights of the assignments and SLOG sum to 32%, so we will give your best work
+on these three a weight of 10%, and your worst work a weight of 6%, with your middling work getting
+weights of 9% and 7%, respectively. Similarly, the term tests sum to 18%, so your best effort will
+have weight 10% and your lesser effort will have weight 6%, and there is 1% per test for completing a
+test-review exercise. The 40% weight of the final is, however, not changeable.
+In addition to the other requirements, must you achieve 40% of the marks on the final exam in order
+to pass this course.
+Re-marks: It is very important to us that your work is evaluated correctly, and that occasionally includes
+re-marking work to see whether we agree with the original grading. On the other hand, there are often
+urgent tasks during the semester that require our attention ahead of re-marks, for example preparing
+the next lecture, assignment, test...
+Here is how we propose to balance importance and urgency. All re-mark requests must be submitted
+on MarkUs within 7 days of when the relevant work is handed back. We promise to consider the
+request before we submit grades at the end of the course.
+Lateness, sickness, natural disasters: We discourage late work, since we have to arrange in advance for grading
+it, and because we want to be able to discuss solutions soon after the assignment is due, while it is still
+fresh in everyone's minds. Late assignments will be penalized at the rate of 5% per hour. If you have
+special circumstances that force you to miss a deadline, please contact us immediately (usually before
+the work is due) and fill out either the "Request for special consideration," or the standard medical
+excuse form (link on course web page) and provide all supporting documentation. We will do our best
+to ensure that your evaluation is not harmed by events that are not your fault.
+Independent work: It is a serious academic offense to pass off somebody else's work as your own for credit.
+Be sure to give full and generous credit to any person or book (except course instructors and teaching
+assistants) you consult in solving assignments. If you take notes when you consult a source, quote that
+source in full.
+If you intend to present work as your own, for credit, then you should not look at similar work by
+other students, in written or electronic form, since looking can easily turn into plagiarism. Don't show
+your own assignments to other students. Take a couple of hours' break after even verbal discussions
+of the assignment before writing it up.
+Email, piazza: Course instructors receive thousands of emails per month, which makes it hard to ensure that
+each piece is followed up on promptly. You should use email to instructors sparingly.
+Use piazza (see course web page) for questions and answers that don't reveal the details of assign-
+ments. Use MarkUs to request (non-test) re-marks and special consideration. Test re-marks need to
+be presented on paper (form on course web site), stapled to the test, to your instructor.
+If you have a question that can't be raised on piazza and is suitable for email, be sure to include
+"CSC148," and something about your question, in the Subject: line.
+
