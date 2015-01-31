@@ -1,186 +1,82 @@
-
-
-
-
-CSC343 Winter 2015
-
-
-
-
-
-
-
-
-
-
-CSC343
-Home
-Piazza
-MarkUs
-Anonymous Feedback
-More
-
-
-Syllabus
-Assignments
-Tests
-CDF Labs
-Course Team
-
-
-
-Winter 2015
-
-
-
-
-
-Logistics
-
-
-
-
-Lectures
- 
-
-
-L0101/L2001
-
-
-L0201/L2201
-
-
-L5101/L2501
-
-
- MWF12 (MP102)
- M2 (LM161),WF2 (RW117)
- R6-9 (BA1130)
-
-
- Diane Horton
- Diane Horton
- David Liu
-
-
-
-
-
-
-
-Office Hours
- M4-6 (David, BA4260); WRF3 (Diane, BA4236)
-
-
-
-
-Contact: Website, Email, Discussion Board
-Information from us: The course website http://www.cdf.toronto.edu/~csc343h/winter is required reading. It contains assignment handouts and other essential material. The course discussion board is on Piazza. You are responsible for reading all postings made by us or the TAs.
-Questions from you: Please use Piazzato ask questions about assignments and course lecture material so that everyone can benefit. For personal questions, email us from your UofT address. Please include "343" in the subject line and include your full name and CDF account.
-Diane's email: dianeh at cs dot utoronto dot ca
-David's email: liudavid at cs dot toronto dot edu
-We will try to respond to email and Piazza postings by the end of the next business day. However, it may take longer, especially near due dates. Try to start assignments early in case you have questions. If you do not hear back quickly, we are always available during office hours to help.
-Prerequisites
-Arts and Science students: If you don't have the course prerequisites listed in the calendar entry, contact Diane Horton immediately to see whether you may remain in the course. Include your name, student number, ROSI academic history, and why you feel you are well prepared to take the course. If we don't issue a waiver, the registrar will remove you from the course.
-Engineering students: If you don't have the course prerequisites listed in your calendar, your registrar may require that we give you permission to take the course. If so, email Diane Horton with your name, student number, ROSI academic history, and why you feel you are well prepared to take the course.
-Active Classes, and Preparation for Them
-During class time in this course, your instructor will present material and demonstrate problem solving for part of the time. There will also regularly be activities that you participate in. Be prepared to get your gears turning in class! There is good evidence, and our experience also shows, that active learning works better than passively listening to a lecture. We also think it's a lot more fun. We will typically use all three hours (lecture and tutorial times) for these kinds of classes, led by your instructor.
-During some in-class activities, students will see and discuss each other's solutions to problems. This is your official notice (per the University's privacy regulations) that your personal information will be used in this way. If you wish to opt out of these particular activities, please notify us at the beginning of the term. Opting out will not directly impact your mark in the course, but you will lose a valuable learning opportunity.
-To prepare for these active classes, you will be doing weekly activities outside of class. These will involve learning some material on your own, through readings or videos, and practising things we've learned in class. They will always culminate in some small exercises that you hand in. These weekly activities are not intended to be greatly time consuming.
-Course Marking Scheme
-
-
-
-Component
-
-
-Weight
-
-
-Description
-
-
-Due
-
-
- Lecture Preparation
- 10% (1% each)
- 10 weekly lecture preparation activities
- Sundays 11:00pm  (weeks 2-12, except week 7)
-
-
- Assignment 1
- 10%
- Relational Algebra
- Tuesday, February 3 8:00pm
-
-
- Assignment 2
- 10%
- Interactive and Embedded SQL
- Tuesday, March 10 8:00pm
-
-
- Assignment 3
- 10%
- XML Query Languages (XPATH, XQuery)Design & Normalization
- Tuesday, March 31 8:00pm
-
-
- Midterm Test
- 15%
- Topic coverage to be announced
- L0101: Wednesday, February 25 at 12:00 noon  L0201: Wednesday, February 25 at 2:00pm  L5101: Thursday, February 26 at 6:00pm
-
-
- Final exam
- 45%
- Cumulative (all topics covered) Note: In order to pass this course, you must earn at least 40% on the final exam.
- During the exam period
-
-
-
-Resources
-These two resources are suggested to support your learning in the course:
-
-The textbook "A First Course in Database Systems" by Jeffrey D. Ullman and Jennifer Widom, 2008 (3rd Edition), available new and used at the UofT bookstore, and online from the publisher, Chapters, or Amazon. It is also available on two-hour loan at the Engineering Library in the Sandford Fleming Building.
-The online mini-courses by Jennifer Widom at Stanford University.
-
-Working with a Partner
-You have the option of partnering with one other CSC343 student for your assignments, and we encourage you to do so. You may choose your own partner, from any section of the course on the St George campus, and it need not be the same person for each assignment. Once you begin working on an assignment, you may not dissolve your partnership without our permission. Both partners will receive the same mark for joint assignments.
-Working with a partner has the potential to lighten your workload or to increase it, depending on how well you work together. Remember that you are responsible for learning the course material underlying all parts of the assignments. You will have the most success if you truly work together.
-Assignment Policies
-Assignments are due on Tuesdays at 8:00 pm sharp. Assignments must be submitted electronically, using the MarkUs online system. Log in with your CDF username and password. Be sure to confirm that you have submitted all the required files and the correct version of each; we cannot accept missing files or a different version of an already-submitted file after the due date. Code that you submit to us for grading must work on the CDF machines in order to earn credit.
-Late Assignments
-We recognize that unexpected problems sometimes make it difficult to submit assignments on time. For this reason, we will be using grace tokens to give you flexibility with assignment deadlines.
-Each student will receive six grace tokens; each grace token can be used for a two-hour extension for an assignment. For example, you may choose to use all six grace tokens on the first assignment, extending its deadline by twelve hours. Or, you may wish to use two tokens for each assignment, extending each deadline by four hours.
-MarkUs automatically deducts grace tokens when you submit an assignment late - you do not need to explicitly say you are using a grace token. If you work with a partner on an assignment, grace tokens are deducted from every team member, not just one of you. For example, if Alice and Bob are working together, and wish to submit an assignment 3 hours late, they must both have at least two grace tokens remaining.
-You may not use grace tokens to extend the deadline of the weekly lecture prep activities.
-Special Consideration
-If you are unable to complete homework or if you miss a test due to major illness or other circumstances completely outside of your control, get in touch with us immediately if you want to receive special consideration.
-In order to receive special consideration, you must fill out a Request for Special Consideration Form. Bring the form to your instructor right away, together with your supporting documentation. In the case of illness, please have a doctor complete a Verification of Student Illness or Injury Form. For other emergencies, be prepared to provide some kind of documentation.
-IMPORTANT: Notify us as soon as possible if you find yourself in such a situation. You can contact us even before you have the documentation; we won't be able to tell you at that point what accommodation you may receive, but can answer other questions and offer advice. It is always easier to resolve situations earlier rather than later.
-Remark Requests
-If you feel there was an error in the marking of an assignment or test, you may request that it be remarked. Print, fill out and submit a Remark Request Form. You must give a specific reason for the request, referring to a possible error or omission by the marker.
-For prompt turnaround, remark requests must be received within one week of when the item was returned.
-Academic Integrity
-The work you submit must be your own. It is an academic offence to copy someone else's work. This includes their code, their words, and even their ideas. Whether you copy or let someone else copy, it is an offence. Academic offences are taken very seriously.
-At the same time, we want you to benefit from working with other students. Obviously, work done with your partner is a joint effort. You are also welcome to work appropriately with students other than your partner. It is appropriate to discuss course material and technology related to assignments, and we encourage you to do so. For example, you may work through examples that help you understand course material or a new technology, or help each other configure your system to run a supporting piece of software. You may also discuss assignment requirements.
-However, other than between partners, collaboration on assignment solutions is strictly forbidden. The most certain way to protect yourself is not to discuss assignment solutions or the ideas behind them with students other than your partner. Certainly you must not let others see your assignment solutions, even in draft form. Please don't cheat. We want you to succeed and are here to help if you are having difficulty.
-Accessibility Needs
-The University of Toronto is committed to accessibility. If you require accommodations or have any accessibility concerns, please visit Accessibility Services as soon as possible.
-
-
-
-
-
-
-
-      Site design by Deyu Wang (dyw999 at gmail dot com)
-    
-
-
-
-
-
-
+CSC148, Winter 2014
+course information sheet
+CSC148, “Introduction to Computer Science,” introduces you to how our discipline thinks in a systematic
+way about computing. Our hope is to provide you the basics for approaching program design principles
+such as encapsulation, modularity, and information-hiding, comparing diﬀerent program implementations
+for eﬃciency, and building powerful data structures. Here’s a summary of the administrative details for
+Winter 2014. Please visit the course web page http://www.cdf.toronto.edu/~heap/148/W14/ often, and
+read email sent to your U of T email for important announcements.
+Contact: Each week, other than reading week (February 17th–21st), we’ll meet
+Lecture 0101: Mondays and Wednesdays, 9–10 a.m., WB116 (Wallberg Building), instructor Danny
+Heap
+Lecture 0201: Mondays and Wednedays, 10–11 a.m., WB116 (Wallberg Building), instructor Danny
+Heap
+Lecture 5101: Wednesdays, 6–8 p.m., MS3153 (Medical Science Building), instructor Dustin Wehr
+. . . for discussion and worked examples. If you have questions that aren’t answered in class, Danny’s
+oﬃce hours are in BA4270 Mondays and Wednesdays 11–noon, and Thursdays 2–4 p.m. Dustin’s oﬃce
+hours are in SF 4306 D on Tuesdays 5–6 p.m. and Wednesdays 2–3 p.m.
+Textbook and computing: We’ll provide slides and links to readings online relevant to our weekly topics. By
+virtue of registering in this course, you will have a CDF account, and it is vitally important that you
+set it up so that you are able to log in. Your CDF account provides computing resources both remotely
+and within the Bahen building, and it allows you to submit course work.
+Syllabus: We’ll discuss the following topics:
+ modularity, encapsulation, information-hiding, object oriented design
+ recursive data structures and recursive programming techniques
+ traversal and mutation of linked data structures, including trees
+ eﬃciency, proﬁling
+ algorithms, sorting
+Marking scheme: The marking scheme is designed to place a low weight (40%) on the ﬁnal exam, since we
+believe this reduces a potential source of stress for students. In order to do this, we have to introduce
+frequent-but-smaller sources of stress: ten (nearly-weekly) labs, four exercises, a courSe bLOG (SLOG),
+two assignments, two term tests. These are timed, and weighted, as follows:
+1
+Work Due Weight
+10 labs every week except week 1 and week 12 10%
+SLOG and two assignments
+SLOG, week 3 – end of course
+24%
+A1, February 13th, 9:59 p.m.
+A2 part I, March 6th, 9:59 p.m.
+A2 part II, March 20th, 9:59 p.m.
+four exercises
+January 16th, 30th, 9:59 p.m.
+8%
+March 13th, 9:59 p.m.
+April 3rd, 9:59 p.m.
+two term tests
+T1, February 26th, during lecture time
+18%
+T2, March 26th, during lecture time
+Final exam some time during exam period 40%
+Nuances: Everybody has better and worse days. We aim to give higher weight to your better work.
+For example, the weights of the assignments and SLOG sum to 24%, so we will give your best work on
+these three a weight of 10%, and your worst work a weight of 6%, with the remaining piece getting 8%.
+Similarly, the term tests sum to 18%, so your best eﬀort will have weight 11% and your lesser eﬀort
+will have weight 7%. After you have completed the 5th lab, you may choose to replace the remaining 5
+labs shifting those marks to your term tests (which become worth 23% in that case). The 40% weight
+of the ﬁnal is, however, not changeable.
+In addition to the other requirements, must you achieve 40% of the marks on the ﬁnal exam in order
+to pass this course.
+Re-marks: It is very important to us that your work is evaluated correctly, and that occasionally includes
+re-marking work to see whether we agree with the original grading. On the other hand, there are often
+urgent tasks during the semester that require our attention ahead of re-marks, for example preparing
+the next lecture, assignment, test...
+Here is how we propose to balance importance and urgency. All re-mark requests must be submitted
+on MarkUs within 7 days of when the relevant work is handed back. We promise to consider the
+request before we submit grades at the end of the course.
+Lateness, sickness, natural disasters: We don’t accept late work, since we have to arrange in advance for grading
+it, and because we want to be able to discuss solutions soon after the assignment is due, while it is
+still fresh in everyone’s minds. However, if you have special circumstances that force you to miss a
+deadline, please contact us immediately (usually before the work is due) and ﬁll out either the “Request
+for special consideration,” or the standard medical excuse form (link on this web page) and provide all
+supporting documentation. We will do our best to ensure there is no penalty for a deadline missed for
+a valid reason.
+Independent work: It is a serious academic oﬀense to pass oﬀ somebody else’s work as your own for credit.
+Be sure to give full and generous credit to any person or book (except course instructors and teaching
+assistants) you consult in solving assignments. If you take notes when you consult a source, quote that
+source in full.
+If you intend to present work as your own, for credit, then you should not look at similar work by
+other students, in written or electronic form, since looking can easily turn into plagiarism. Don’t show
+your own assignments to other students. Take a couple of hours’ break after even verbal discussions
+of the assignment before writing it up.
+

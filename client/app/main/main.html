@@ -10,6 +10,16 @@
 
 <div class="container">
   <div class="row">
+     Select File: <div class="button" ng-file-select ng-model="files">Select File</div>
+
+     Drop File: <div ng-file-drop ng-model="files" class="drop-box" 
+                     drag-over-class="dragover" multiple="true" 
+                     allow-dir="true" accept="image/*,application/pdf">
+                         Drop Images or PDFs files here
+                </div>
+     <div ng-no-file-drop>File Farg/Drop is not supported for this browser</div>
+  </div>
+  <div class="row">
     <div class="col-lg-12">
       <h1 class="page-header">Features:</h1>
       <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">

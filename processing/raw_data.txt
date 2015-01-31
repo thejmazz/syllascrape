@@ -1,74 +1,198 @@
-CSC148, Winter 2014
-course information sheet
-CSC148, “Introduction to Computer Science,” introduces you to how our discipline thinks in a systematic
-way about computing. Our hope is to provide you the basics for approaching program design principles
-such as encapsulation, modularity, and information-hiding, comparing different program implementations
-for efficiency, and building powerful data structures. Here’s a summary of the administrative details for
-Winter 2014. Please visit the course web page http://www.cdf.toronto.edu/~heap/148/W14/ often, and
-read email sent to your U of T email for important announcements.
-Contact: Each week, other than reading week (February 17th–21st), we’ll meet
-Lecture 0101: Mondays and Wednesdays, 9–10 a.m., WB116 (Wallberg Building), instructor Danny
-Heap
-Lecture 0201: Mondays and Wednedays, 10–11 a.m., WB116 (Wallberg Building), instructor Danny
-Heap
-Lecture 5101: Wednesdays, 6–8 p.m., MS3153 (Medical Science Building), instructor Dustin Wehr
-. . . for discussion and worked examples. If you have questions that aren’t answered in class, Danny’s
-office hours are in BA4270 Mondays and Wednesdays 11–noon, and Thursdays 2–4 p.m. Dustin’s office
-hours are in SF 4306 D on Tuesdays 5–6 p.m. and Wednesdays 2–3 p.m.
-Textbook and computing: We’ll provide slides and links to readings online relevant to our weekly topics. By
-virtue of registering in this course, you will have a CDF account, and it is vitally important that you
-set it up so that you are able to log in. Your CDF account provides computing resources both remotely
-and within the Bahen building, and it allows you to submit course work.
-Syllabus: We’ll discuss the following topics:
-✎ modularity, encapsulation, information-hiding, object oriented design
-✎ recursive data structures and recursive programming techniques
-✎ traversal and mutation of linked data structures, including trees
-✎ efficiency, profiling
-✎ algorithms, sorting
-Marking scheme: The marking scheme is designed to place a low weight (40%) on the final exam, since we
-believe this reduces a potential source of stress for students. In order to do this, we have to introduce
-frequent-but-smaller sources of stress: ten (nearly-weekly) labs, four exercises, a courSe bLOG (SLOG),
-two assignments, two term tests. These are timed, and weighted, as follows:
-1Work Due Weight
-10 labs every week except week 1 and week 12 10%
-SLOG and two assignments
-SLOG, week 3 – end of course
-24% A1, February 13th, 9:59 p.m.
-A2 part I, March 6th, 9:59 p.m.
-A2 part II, March 20th, 9:59 p.m.
-four exercises
-January 16th, 30th, 9:59 p.m.
-March 13th, 9:59 p.m. 8%
-April 3rd, 9:59 p.m.
-two term tests T1, February 26th, during lecture time 18% T2, March 26th, during lecture time
-Final exam some time during exam period 40%
-Nuances: Everybody has better and worse days. We aim to give higher weight to your better work.
-For example, the weights of the assignments and SLOG sum to 24%, so we will give your best work on
-these three a weight of 10%, and your worst work a weight of 6%, with the remaining piece getting 8%.
-Similarly, the term tests sum to 18%, so your best effort will have weight 11% and your lesser effort
-will have weight 7%. After you have completed the 5th lab, you may choose to replace the remaining 5
-labs shifting those marks to your term tests (which become worth 23% in that case). The 40% weight
-of the final is, however, not changeable.
-In addition to the other requirements, must you achieve 40% of the marks on the final exam in order
-to pass this course.
-Re-marks: It is very important to us that your work is evaluated correctly, and that occasionally includes
-re-marking work to see whether we agree with the original grading. On the other hand, there are often
-urgent tasks during the semester that require our attention ahead of re-marks, for example preparing
-the next lecture, assignment, test...
-Here is how we propose to balance importance and urgency. All re-mark requests must be submitted
-on MarkUs within 7 days of when the relevant work is handed back. We promise to consider the
-request before we submit grades at the end of the course.
-Lateness, sickness, natural disasters: We don’t accept late work, since we have to arrange in advance for grading
-it, and because we want to be able to discuss solutions soon after the assignment is due, while it is
-still fresh in everyone’s minds. However, if you have special circumstances that force you to miss a
-deadline, please contact us immediately (usually before the work is due) and fill out either the “Request
-for special consideration,” or the standard medical excuse form (link on this web page) and provide all
-supporting documentation. We will do our best to ensure there is no penalty for a deadline missed for
-a valid reason.
-Independent work: It is a serious academic offense to pass off somebody else’s work as your own for credit.
-Be sure to give full and generous credit to any person or book (except course instructors and teaching
-assistants) you consult in solving assignments. If you take notes when you consult a source, quote that
-source in full.
-If you intend to present work as your own, for credit, then you should not look at similar work by
-other students, in written or electronic form, since looking can easily turn into plagiarism. Don’t show
-your own assignments to other students. Take a co
+Department of Mathematics, University of Toronto
+MAT223H1S - Linear Algebra I
+Winter 2015
+Brief Course Description
+Welcome to MAT223H1S Linear Algebra I. This sheet answers the most common questions about the course.
+Please take a few minutes to read this course information handout carefully and keep a copy for your records.
+This is the first undergraduate course in linear algebra taken by students from a variety of disciplines. The
+course covers: systems of linear equations, matrix algebra, vector geometry, vector spaces, orthogonality,
+rank, introduction to linear transformations, determinants, eigenvalues and eigenvectors, diagonalization
+(see pages 5 & 6 for the full list of topics covered and schedule).
+Throughout the course, you will have an opportunity to develop your problem solving, reasoning, and logic
+skills. Students will be required to be able to solve standard computational problems in each section covered,
+understand all definitions and theorems, and be able to do simple, short proofs of particular statements.
+You will see some interesting and exciting material in this course. If you run into some trouble along the
+way, please do not hesitate to contact your instructor or TA for help.
+Lectures/Administrative Information
+Section Time Lecture Room Instructor Office
+L0101 T1-3, W1 SF 1105 N. Jung ES 4141
+L0201 T1-3, R1 MP 202 S. Uppal BA 6110
+L0301 T1-3, F1 SS 2135 H. Wu HU 1024
+L5101 T6-9 SS 2118 A. Izosimov BA 6172
+L5102 W6-9 SF 1105 D. Muthiah HU 912
+Course Coordinator: S. Uppal.
+Email: uppal@math.utoronto.ca. Please read the Email Policy on page 3 of this document before sending
+an email.
+Office hours: Wednesdays 17:10-18:30, Thursdays 16:10-18:00 or by appointment. If you would like to
+book an appointment outside my regularly scheduled office hours, please send me an email indicating the
+times you are available to meet. Also, please give at least 24 hours notice for appointments so that there is
+suitable time to make arrangements.
+The course Blackboard website is accessible through the main UofT portal at https://portal.utoronto.ca.
+All announcements and handouts will be posted on the course website. Please visit the website regularly.
+Marking Scheme
+Your final grade will be calculated by the following formula:
+1 of 6Midterm Exam I & Midterm Exam II - 40% (combined), Quizzes - 10%, Final Exam - 50%.
+Textbook
+Jeffrey Holt: Linear algebra with Applications, 1st edition. There is also a Students Solution Manual available
+should you wish to purchase it.
+Tutorials and Quizzes
+Every student should be registered in one tutorial section. You must register in one of the tutorial
+time slots through ROSI before the end of the first week of classes. After that, please follow the
+instructions posted on the course webpage to enrol or switch tutorials. By the end of the second week of
+classes tutorial locations will be posted on the course webpage.
+Tutorials begin the 3rd week of classes. During your tutorials your TA will discuss ’tutorial problems’ which
+will be posted on the course website each Friday before your tutorial the following week. The problems are
+based on the suggested homework problems, emphasize the most important concepts, and are meant to help
+prepare you for the exams. Feel free to ask questions about the problems you have most difficulty with.
+Tutorials are an integral part of the course and should be regarded as just as important as lectures.
+There will be a 10-15 minute quiz and the end of almost every tutorial (see pages 5 & 6 for the schedule).
+The quiz will consist of one question based on the suggested problems/tutorial problems for that week.
+Students are expected to provide their own paper to write the quiz. The marking for the quiz will be out
+of 4. The fought marking scheme for quizzes will be as follows: 4 will be given for a perfect answer ; 3 for
+incorrect answers that demonstrate a solid understanding of the material but have minor calculation errors;
+2 for answers that demonstrate some understanding of the material but are poorly presented and/or have
+many calculation errors; and 1 or 0 for little to no understanding of the material. In total, there will be nine
+quizzes but only your best six quizzes will count toward your quiz grade. Each student must attend their
+assigned tutorial to write their quiz otherwise your grade will be recorded as 0. The material
+for the quiz will be posted on the course website each Friday before your tutorial the following week.
+Midterm Exams
+There will be two 1hr 50min minute midterm exams common to all sections scheduled Friday February 13,
+and Friday March 20 from 4:10-6:00pm with an early sitting from 2:10-4:00pm for those with a conflict. If
+you have a legitimate conflict and need to register for the early sitting of the exams, contact the course
+coordinator. There will be no make-up exams. Exact details about exam coverage etc will be posted
+on the website roughly two weeks before the test date.
+Midterm I & II account for 40% of your final grade combined. The higher of your two midterm exam grades
+will account for 25% of your final grade; the lower 15%. This only applies to students who write both exams.
+If you only write one midterm exam due to illness, it will count for 20% of your final grade and your final
+exam will count for 70% of your final grade.
+If you miss the midterm for a legitimate reason which you can document, your grading scheme will be
+adjusted by increasing the final exam component of your mark. The documentation must be submitted to
+the course coordinator no later than 7 days after the date of the exam/quiz otherwise your grade for the
+exam/quiz will be recorded as zero. From the Faculty of Arts & Science:
+”You will need official documentation that confirms you were unable to do what you were supposed to do
+on the dates you were supposed to do it, i.e., documentation must indicate incapacity, and give the dates or
+period affected. Generally speaking, the stronger your documentation, the stronger your case...Those doctors
+notes with Patient was ill or Off work scribbled on little prescription pads wont be accepted. Also, the
+2 of 6Medical Certificate must indicate that the doctor diagnosed and treated you when you were ill; it cannot
+just report that you told the doctor after-the-fact that you were ill previously.”
+Generally, an illness must be serious enough that it prevents you from writing an exam. For example, a
+headache is not sufficient to warrant absence. The only accepted note is a fully completed University of
+Toronto Verification of Student Illness or Injury form. You can find a copy of the form here:
+http://www.illnessverification.utoronto.ca/
+It must be original and completed by a qualified medical doctor (e.g., not an acupuncturist, chiropractor, or
+other health care professional). The doctors OHIP registration number must be provided on the note.
+Under no circumstances can the final exam count for more than 80% of your final mark.
+Questions and Answers Website
+We will use Piazza as our online forum for this class. You may ask questions, discuss math, form study groups,
+and in general help each other. You may even post anonymously if you prefer. On the class dashboard, you
+can post questions and collaborate Wikipedia- style to edit responses to these questions. Instructors may
+also answer questions, endorse student answers, and edit or delete any posted content. Piazza has a LaTex
+equation editor for simple math formatting. You can also take photos of your written work so you may ask
+questions without keying in elaborate expressions. If you have any problems or feedback for the developers,
+email team@piazza.com..
+You will first need to sign up at piazza.com/utoronto.ca/winter2015/mat223h1s using your @utoronto.ca
+email account.
+Email Policy
+Email correspondence is to be used for non-teaching purposes only. This may include setting up an
+appointment with your instructor or clarification of the course structure. I may not respond to an email
+which deals with specific questions about course concepts or homework/tutorial problems - please post such
+questions on Piazza or ask your instructor after class or during office hours. If the answer to your
+question is contained within the course outline or announcement page of the course webpage,
+you will not receive a response to your email.
+Accessibility Needs
+The University of Toronto is committed to accessibility. If you require accommodations for a disability, or
+have any accessibility concerns about the course, the classroom or course materials, please contact Accessibility
+Services as soon as possible: disability.services@utoronto.ca or http://studentlife.utoronto.ca/accessibility
+Academic Integrity
+Academic integrity is fundamental to learning and scholarship at the University of Toronto. Participating
+honestly, respectfully, responsibly, and fairly in this academic community ensures that the U of T degree
+that you earn will be valued as a true indication of your individual academic achievement, and will continue
+to receive the respect and recognition it deserves.
+Familiarize yourself with the University of Torontos Code of Behaviour on Academic Matters:
+http://www.governingcouncil.utoronto.ca/policies/behaveac.htm
+It is the rule book for academic behaviour at the U of T, and you are expected to know the rules. Potential
+offences include, but are not limited to:
+3 of 6In papers and assignments:
+• Using someone elses ideas or words without appropriate acknowledgement
+• Copying material word-for-word from a source (including lecture and study group notes) and not
+placing the words within quotation marks.
+• Submitting your own work in more than one course without the permission of the instructor.
+• Making up sources or facts.
+• Including references to sources that you did not use.
+• Obtaining or providing unauthorized assistance on any assignment including working in groups on
+assignments that are supposed to be individual work, or having someone rewrite or add material to
+your work while editing.
+• Lending your work to a classmate who submits it as his/her own without your permission.
+On tests and exams:
+• Using or possessing any unauthorized aid, including a cell phone.
+• Looking at someone elses answers
+• Letting someone else look at your answers.
+• Misrepresenting your identity.
+• Submitting an altered test for re-grading.
+Misrepresentation:
+• Falsifying or altering any documentation required by the University, including doctors notes.
+• Falsifying institutional documents or grades.
+The University of Toronto treats cases of academic misconduct very seriously. All suspected cases of academic
+dishonesty will be investigated following the procedures outlined in the Code. The consequences for academic
+misconduct can be severe, including a failure in the course and a notation on your transcript. If you have
+any questions about what is or is not permitted in this course, please do not hesitate to contact me. If you
+have questions about appropriate research and citation methods, seek out additional information from me,
+or from other available campus resources like the U of T Writing Website. If you are experiencing personal
+challenges that are having an impact on your academic work, please speak to me or seek the advice of your
+college registrar.
+4 of 6Schedule and Suggested Problems
+As a general rule, you should try to solve as many problems as possible (in a timely fashion). The more
+problems you try, the better your understanding will be. I suggest you attempt to solve, at the minimum,
+all the odd numbered questions from the list below. The answers to all the odd numbered questions are in
+the back of the textbook (the Students Solution Manual has full solutions to all the odd problems).
+Your instructor may be slightly ahead or behind this schedule. This schedule is subject to change.
+Week 1 beginning January 5.
+Lecture: Systems of Linear Equations.
+• Introduction to the course.
+• Section 1.1: Lines and linear equations. # 1-60.
+• Section 1.2: Linear Systems and Matrices (Elementary operations & Guassian Elimination). # 1-56.
+Week 2 beginning January 12.
+Lecture: Euclidean Space.
+• Section 2.1: Vectors. # 1-80.
+• Section 2.2: Span. # 1-74.
+Week 3 beginning January 19. Tutorials begin. Quiz 1.
+Lecture: Euclidean Space (continued). Matrices.
+• Section 2.3: Linear Independence. # 1-66.
+• Section 3.1: Linear Transformations R
+m → R
+n. # 1-66.
+Week 4 beginning January 26. Quiz 2.
+Lecture: Matrices (continued).
+• Section 3.2: Matrix Algebra. # 1-64.
+• Section 3.3: Inverses. # 1-70.
+Week 5 beginning February 2. Quiz 3.
+Lecture: Subspaces.
+• Section 4.1: Introduction to Subspaces. 1-72.
+• Section 4.2: Basis and Dimension. # 1-68.
+Week 6 beginning February 9. Midterm Exam I. Quiz 4.
+Lecture: Subspaces (continued). Determinants.
+5 of 6• Section 4.3: Row and Column Spaces. # 1-60.
+• Section 5.1: The Determinant Function. # 1-82.
+Week 7 beginning February 23. Quiz 5.
+Lecture: . Determinants (continued).
+• Section 5.2: Properties of the Determinant. # 1-72.
+• Section 5.3: Applications of the Determinant (skip Cramer’s Rule). # 13-36, 39-62.
+Week 8 beginning March 2. Quiz 6.
+Lecture: Eigenvalues & Eigenvectors.
+• Section 6.1: Eigenvalues and Eigenvectors. # 1-66.
+• Section 6.3: Change of Basis. # 1-50.
+Week 9 beginning March 9. Quiz 7.
+Lecture: Eigenvlaues & Eigenvectors (continued). Orthogonality.
+• Section 6.4: Diagonalization. # 1-64.
+• Section 8.1: Dot Products and Orthogonal Sets. # 1-72.
+Week 10 beginning March 16. Midterm Exam II. Quiz 8.
+Lecture: Orthogonality (continued). Vector Spaces.
+• Section 8.2: Projection and the Gram-Schmidt Process. # 1-58.
+• Section 7.1: Vector Spaces and Subspaces. # 1-28, 33-49
+Week 11 beginning March 23. Quiz 9.
+Lecture: Vector Spaces (continued).
+• Section 7.2: Span and Linear Independence. # 1-54.
+• Section 7.3: Basis and Dimension. # 1-58.
+Week 12 beginning March 30.
+Lecture: Catch-up/Review.
+6 of 6
