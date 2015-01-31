@@ -1,5 +1,6 @@
 import urllib.request
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, SoupStrainer
+import itertools
 
 class URLtoText:
 	'''
@@ -13,29 +14,48 @@ class URLtoText:
 
 		self.url = url
 
-	def convert_to_text(self):
+	def convert_only_tables(self):
 		''' (URLtoText) -> str
 		'''
 
-		response = urllib.request.urlopen(self.url)
-		html = response.read()
-		self.soup = BeautifulSoup(html)
-		return self.soup.prettify()
+		self.response = urllib.request.urlopen(self.url)
+		self.html = self.response.read()
+		self.soup = BeautifulSoup(self.html, parse_only=only_table_tags)
+		return(self.soup)
 
-	def extract_from_table(self):
-		''' (URLtoText) -> NoneType
+	def extract_from_table(self, converted_text):
+		''' (URLtoText, BeautifulSoup) -> NoneType
 		'''
 
-		self.td = self.soup.find_all('td')
+		just_text = str(converted_text)
+		first_table = just_text.split('<tr>')
+		# for x in first_table:
+		# 	second_table = x.split('\n')
+		# for y in second_table:
+		# 	third_table.append(y.lstrip('<td>'))
+		# for z in third_table:
+		# 	fourth_table.append(z.strip('</strong>'))
+		# for z in third_table:
+		# 	if z != '':
+		# 		fourth_table.append(z)
 
-	def from_table_to_text(self):
+		for item in first_table:
+			print(item)
+
+	def join_tables(self, final_table):
 		''' (URLtoText) -> str
 		'''
 
-		print(self.td.get_text())
+		table_into_string = ' '.join(final_table)
+		final_string = table_into_string.strip('\n')
+		print(final_string)
+
+
 
 if __name__ == '__main__':
 	u = URLtoText("http://www.cdf.toronto.edu/~csc209h/winter//info.html")
-	u.convert_to_text()
-	u.extract_from_table()
-	u.from_table_to_text()
+	only_table_tags = SoupStrainer('tr') # find only tables
+	converted_text = u.convert_only_tables()
+	final_table = u.extract_from_table(converted_text)
+	# u.join_tables(final_table)
+	# output temp.txt
