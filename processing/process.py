@@ -1,7 +1,7 @@
 from nltk import *
 import re
 import sys
-import urllib.request
+import urllib
 
 months = "January,February,March,April,May,June,July,August,September,\
 October,November,December,Jan,Feb,Mar,Apr,Jun,Jul,Aug,Sep,Oct,Nov,Dec".split(",")
@@ -14,7 +14,7 @@ def main():
 
     d = {}
     if len(sys.argv) == 3 and sys.argv[1] == '-u':
-        urllib.request.urlretrieve(sys.argv[2], 'tmp.txt')
+        urllib.urlretrieve(sys.argv[2], 'tmp.txt')
     elif len(sys.argv) == 3:
         print("Invalid option.")
         sys.exit()
@@ -22,7 +22,7 @@ def main():
     cache = [[], [], []]
     with open('tmp.txt') as file:
         for raw_line in file:
-            tokens = word_tokenize(str(raw_line))
+            tokens = word_tokenize(raw_line.decode('utf-8'))
             for token in tokens:
                 if (token in months):
                     date = find_date(tokens, token)
@@ -38,7 +38,7 @@ def main():
 
     with open("output.csv", "w") as out:
         for date, evaluation in d.items():
-            print(evaluation + " – " + date)
+            print(evaluation + ": " + date)
             out.write((evaluation + "," + date + "\n"))
 
 def find_eval(tokens, month, cache=None):
@@ -78,7 +78,7 @@ def find_date(tokens, month):
 
     # Cleaning up some of the values for output
     year = ("2014" if (9 < int(month_num) < 12) else "2015")
-    if not day.isnumeric():
+    if not day.isdigit():
         day = day[:-2]
     if len(day) == 1:
         day = "0" + day
@@ -105,7 +105,7 @@ def look_around(tokens, checker, initial_i):
             change += 1
 
     except IndexError as e:
-        print("Error:", e.errno)
+        print("Error: " + e.errno)
 
     return -1;
                 
