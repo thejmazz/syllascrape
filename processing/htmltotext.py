@@ -22,7 +22,7 @@ class URLtoHTML:
 
 		self.response = urllib.request.urlopen(self.url)
 		self.html = self.response.read()
-		self.soup = BeautifulSoup(self.html, parse_only=only_table_tags)
+		self.soup = BeautifulSoup(self.html)
 		return(self.soup)
 
 	def extract_from_table(self, converted_text):
@@ -66,9 +66,10 @@ class HTMLtoText:
 
 if __name__ == '__main__':
 	u = URLtoHTML(sys.argv[1])
-	only_table_tags = SoupStrainer('tr') # find only tables
+	# only_table_tags = SoupStrainer('') # find only tables
 	converted_text = u.convert_only_tables()
 	final_tables = u.extract_from_table(converted_text)
+	print(final_tables)
 	h = HTMLtoText(final_tables)
 	output = h.convert_to_text()
 
