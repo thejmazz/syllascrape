@@ -1,7 +1,8 @@
 from __future__ import print_function
 import sys
-import urllib.request
-from bs4 import BeautifulSoup, SoupStrainer
+import urllib2
+# import os
+from bs4 import BeautifulSoup
 
 
 class URLtoHTML:
@@ -20,10 +21,10 @@ class URLtoHTML:
 		''' (URLtoText) -> str
 		'''
 
-		self.response = urllib.request.urlopen(self.url)
+		self.response = urllib2.urlopen(self.url)
 		self.html = self.response.read()
 		self.soup = BeautifulSoup(self.html)
-		return(self.soup)
+		return self.soup
 
 	def extract_from_table(self, converted_text):
 		''' (URLtoText, BeautifulSoup) -> NoneType
@@ -35,7 +36,7 @@ class URLtoHTML:
 		for item in first_table:
 			second_table.append(item.strip('\n'))
 		string_table_HTML = ' '.join(second_table)
-		return(string_table_HTML)
+		return string_table_HTML
 
 	def join_tables(self, final_table):
 		''' (URLtoText) -> str
@@ -43,7 +44,7 @@ class URLtoHTML:
 
 		table_into_string = ' '.join(final_table)
 		final_string = table_into_string.strip('\n')
-		return(final_string)
+		return final_string 
 
 
 class HTMLtoText:
@@ -60,7 +61,7 @@ class HTMLtoText:
 
 		self.soup = BeautifulSoup(self.HTML_string)
 		just_text = self.soup.get_text()
-		return(just_text)
+		return just_text
 
 
 
@@ -72,10 +73,7 @@ if __name__ == '__main__':
 	h = HTMLtoText(final_tables)
 	output = h.convert_to_text()
 
-	f = open('tmp.txt', 'w')
-	print(output, file=f)
+	with open('tmp.txt', 'w') as file:
+		file.write(output)
 
-
-
-
-	# output temp.txt
+	# os.system("python process.py tmp.txt")
