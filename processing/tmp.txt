@@ -2,7 +2,7 @@
 
 
 
-CSC263H Summer 2014
+CSC343 Winter 2015
 
 
 
@@ -12,455 +12,175 @@ CSC263H Summer 2014
 
 
 
-     body {
-        display: block;
-	}
+
+CSC343
+Home
+Piazza
+MarkUs
+Anonymous Feedback
+More
+
+
+Syllabus
+Assignments
+Tests
+CDF Labs
+Course Team
+
+
+
+Winter 2015
+
+
+
+
+
+Logistics
+
+
+
+
+Lectures
+ 
+
+
+L0101/L2001
+
+
+L0201/L2201
+
+
+L5101/L2501
+
+
+ MWF12 (MP102)
+ M2 (LM161),WF2 (RW117)
+ R6-9 (BA1130)
+
+
+ Diane Horton
+ Diane Horton
+ David Liu
+
+
+
+
+
+
+
+Office Hours
+ M4-6 (David, BA4260); WRF3 (Diane, BA4236)
+
+
+
+
+Contact: Website, Email, Discussion Board
+Information from us: The course website http://www.cdf.toronto.edu/~csc343h/winter is required reading. It contains assignment handouts and other essential material. The course discussion board is on Piazza. You are responsible for reading all postings made by us or the TAs.
+Questions from you: Please use Piazzato ask questions about assignments and course lecture material so that everyone can benefit. For personal questions, email us from your UofT address. Please include "343" in the subject line and include your full name and CDF account.
+Diane's email: dianeh at cs dot utoronto dot ca
+David's email: liudavid at cs dot toronto dot edu
+We will try to respond to email and Piazza postings by the end of the next business day. However, it may take longer, especially near due dates. Try to start assignments early in case you have questions. If you do not hear back quickly, we are always available during office hours to help.
+Prerequisites
+Arts and Science students: If you don't have the course prerequisites listed in the calendar entry, contact Diane Horton immediately to see whether you may remain in the course. Include your name, student number, ROSI academic history, and why you feel you are well prepared to take the course. If we don't issue a waiver, the registrar will remove you from the course.
+Engineering students: If you don't have the course prerequisites listed in your calendar, your registrar may require that we give you permission to take the course. If so, email Diane Horton with your name, student number, ROSI academic history, and why you feel you are well prepared to take the course.
+Active Classes, and Preparation for Them
+During class time in this course, your instructor will present material and demonstrate problem solving for part of the time. There will also regularly be activities that you participate in. Be prepared to get your gears turning in class! There is good evidence, and our experience also shows, that active learning works better than passively listening to a lecture. We also think it's a lot more fun. We will typically use all three hours (lecture and tutorial times) for these kinds of classes, led by your instructor.
+During some in-class activities, students will see and discuss each other's solutions to problems. This is your official notice (per the University's privacy regulations) that your personal information will be used in this way. If you wish to opt out of these particular activities, please notify us at the beginning of the term. Opting out will not directly impact your mark in the course, but you will lose a valuable learning opportunity.
+To prepare for these active classes, you will be doing weekly activities outside of class. These will involve learning some material on your own, through readings or videos, and practising things we've learned in class. They will always culminate in some small exercises that you hand in. These weekly activities are not intended to be greatly time consuming.
+Course Marking Scheme
+
+
+
+Component
+
+
+Weight
+
+
+Description
+
+
+Due
+
+
+ Lecture Preparation
+ 10% (1% each)
+ 10 weekly lecture preparation activities
+ Sundays 11:00pm  (weeks 2-12, except week 7)
+
+
+ Assignment 1
+ 10%
+ Relational Algebra
+ Tuesday, February 3 8:00pm
+
+
+ Assignment 2
+ 10%
+ Interactive and Embedded SQL
+ Tuesday, March 10 8:00pm
+
+
+ Assignment 3
+ 10%
+ XML Query Languages (XPATH, XQuery)Design & Normalization
+ Tuesday, March 31 8:00pm
+
+
+ Midterm Test
+ 15%
+ Topic coverage to be announced
+ L0101: Wednesday, February 25 at 12:00 noon  L0201: Wednesday, February 25 at 2:00pm  L5101: Thursday, February 26 at 6:00pm
+
+
+ Final exam
+ 45%
+ Cumulative (all topics covered) Note: In order to pass this course, you must earn at least 40% on the final exam.
+ During the exam period
+
+
+
+Resources
+These two resources are suggested to support your learning in the course:
+
+The textbook "A First Course in Database Systems" by Jeffrey D. Ullman and Jennifer Widom, 2008 (3rd Edition), available new and used at the UofT bookstore, and online from the publisher, Chapters, or Amazon. It is also available on two-hour loan at the Engineering Library in the Sandford Fleming Building.
+The online mini-courses by Jennifer Widom at Stanford University.
+
+Working with a Partner
+You have the option of partnering with one other CSC343 student for your assignments, and we encourage you to do so. You may choose your own partner, from any section of the course on the St George campus, and it need not be the same person for each assignment. Once you begin working on an assignment, you may not dissolve your partnership without our permission. Both partners will receive the same mark for joint assignments.
+Working with a partner has the potential to lighten your workload or to increase it, depending on how well you work together. Remember that you are responsible for learning the course material underlying all parts of the assignments. You will have the most success if you truly work together.
+Assignment Policies
+Assignments are due on Tuesdays at 8:00 pm sharp. Assignments must be submitted electronically, using the MarkUs online system. Log in with your CDF username and password. Be sure to confirm that you have submitted all the required files and the correct version of each; we cannot accept missing files or a different version of an already-submitted file after the due date. Code that you submit to us for grading must work on the CDF machines in order to earn credit.
+Late Assignments
+We recognize that unexpected problems sometimes make it difficult to submit assignments on time. For this reason, we will be using grace tokens to give you flexibility with assignment deadlines.
+Each student will receive six grace tokens; each grace token can be used for a two-hour extension for an assignment. For example, you may choose to use all six grace tokens on the first assignment, extending its deadline by twelve hours. Or, you may wish to use two tokens for each assignment, extending each deadline by four hours.
+MarkUs automatically deducts grace tokens when you submit an assignment late - you do not need to explicitly say you are using a grace token. If you work with a partner on an assignment, grace tokens are deducted from every team member, not just one of you. For example, if Alice and Bob are working together, and wish to submit an assignment 3 hours late, they must both have at least two grace tokens remaining.
+You may not use grace tokens to extend the deadline of the weekly lecture prep activities.
+Special Consideration
+If you are unable to complete homework or if you miss a test due to major illness or other circumstances completely outside of your control, get in touch with us immediately if you want to receive special consideration.
+In order to receive special consideration, you must fill out a Request for Special Consideration Form. Bring the form to your instructor right away, together with your supporting documentation. In the case of illness, please have a doctor complete a Verification of Student Illness or Injury Form. For other emergencies, be prepared to provide some kind of documentation.
+IMPORTANT: Notify us as soon as possible if you find yourself in such a situation. You can contact us even before you have the documentation; we won't be able to tell you at that point what accommodation you may receive, but can answer other questions and offer advice. It is always easier to resolve situations earlier rather than later.
+Remark Requests
+If you feel there was an error in the marking of an assignment or test, you may request that it be remarked. Print, fill out and submit a Remark Request Form. You must give a specific reason for the request, referring to a possible error or omission by the marker.
+For prompt turnaround, remark requests must be received within one week of when the item was returned.
+Academic Integrity
+The work you submit must be your own. It is an academic offence to copy someone else's work. This includes their code, their words, and even their ideas. Whether you copy or let someone else copy, it is an offence. Academic offences are taken very seriously.
+At the same time, we want you to benefit from working with other students. Obviously, work done with your partner is a joint effort. You are also welcome to work appropriately with students other than your partner. It is appropriate to discuss course material and technology related to assignments, and we encourage you to do so. For example, you may work through examples that help you understand course material or a new technology, or help each other configure your system to run a supporting piece of software. You may also discuss assignment requirements.
+However, other than between partners, collaboration on assignment solutions is strictly forbidden. The most certain way to protect yourself is not to discuss assignment solutions or the ideas behind them with students other than your partner. Certainly you must not let others see your assignment solutions, even in draft form. Please don't cheat. We want you to succeed and are here to help if you are having difficulty.
+Accessibility Needs
+The University of Toronto is committed to accessibility. If you require accommodations or have any accessibility concerns, please visit Accessibility Services as soon as possible.
+
+
+
+
+
+
+
+      Site design by Deyu Wang (dyw999 at gmail dot com)
     
 
 
 
-
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-22411948-1', 'toronto.edu');
-		ga('require', 'displayfeatures');
-		ga('send', 'pageview');
-	
-
-
-
-
-
-News
-Contacts
-Overview
-Schedule
-Tutorials
-Homeworks
-Exams
-Policies
-Links
-Top
-
-
-
-
-
-
-
-CSC263H - Data Structures and Analysis - Summer 2014
-Department of Computer Science, University of Toronto
-
-
-
-
-
-
-This course has finished.
-
-
-
-
-News
-
-
-August 20, 2014 - Marks available on ROSI
-Have a great summer.
-
-August 14, 2014 - A4 available for pick-up
-Assignments can be picked up in the office hours. Marks are uploaded to
-	CDF.
-Also, please double check all your marks on CDF and contact Larry if
-	there is any error.
-
-August 12, 2014 - Office hours before final exam
-This Wednesday, Thursday and Friday: 5pm-6pm, and next Monday: 1pm-2pm. (Use them!)
-Reminder again: Final exam on Monday August 18, 7pm-10pm, at NR25.
-
-OLDER NEWS
-
-
-
-
-Contacts
-
-
-Instructor
-
-Larry Zhang
-Office: BA5211 (Behind the door of BA5206)
-Email: ylzhang AT cs DOT toronto DOT edu
-
-
-TAs
-Recep Çolak, Tom Lee, Roy Luo and Jimmy Zhu
-
-Lectures
-Tuesdays 6pm - 8pm, at BA1130
-
-Tutorials
-Tuesdays 8pm - 9pm, at BA1130
-Attendance in tutorials is as mandatory as attendance in lectures.
-
-Office hours
-Wednesdays 4:30pm - 6:30pm, at BA5206
-
-Course Forum
-https://piazza.com/demo_login?nid=hspf0pk44cb22p&auth;=b735db1
-See the Policies section for details about how to use the course forum.
-
-
-
-
-Overview
-
-
-Course goals
-Data structures are ways of organizing the data involved in
-	  computation, suitable for representation in and manipulation by
-	  computers.  Algorithms are precisely stated, general problem solving
-	  methods.  Data structures and algorithms are central to computer science.
-	  They are also integrally related: neither can be studied fruitfully
-	  without knowledge of the other. This course has two goals: First, to
-	  survey several important data structures and algorithms; and second, to
-	  introduce the basic tools and techniques for the analysis of algorithms
-	  and data structures.
-
-Textbook
-T.H. Cormen, C.E. Leiserson, R.L. Rivest and C. Stein, "Introduction to Algorithms", 3rd edition, MIT press, 2009. (Errata page)
-The 2nd edition of the textbook is available to UofT students through the UofT library.
-Both the 2nd and 3rd editions are acceptable for this course.
-
-Prerequisites
-CSC207H1, CSC236H1/CSC240H1, STA247H1/STA255H1/STA257H1
-CGPA 1.5/enrollment in a CSC subject POSt.
-See policy on prerequisite waivers.
-
-Marking scheme
-Homeworks: 40% (10% for each of the four assignments)
-Midterm: 15%
-Final: 45% (A mark of at least 40% on the final exam is necessary to pass the course.)
-
-Course Information Sheet
-CSC263_S14_INFO.pdf
-
-
-
-
-Schedule
-
-
-Tentative Weekly Schedule
-
-
-Date
-Topics
-Reading
-Memo
-
- Week 1
-May 13
- 
-Review of time complexity of algorithms and asymptotic
-					notation; upper and lower bounds on algorithm complexity.
-Abstract data types.
-
- Chapter 1, 2, 3
-Notes on bounds
- A1 out 
-
- Week 2
-May 20
- 
-Priority queues: heaps.
-Priority queues: mergeable heaps.
-
- Chapter 6
-Notes on binomial heaps
- 
-
- Week 3
-May 27
- 
-Dictionaries.
-Binary search trees; balanced search trees.
-
- Chapter 12.1, 12.2, 12.3
-Notes on AVL trees
- 
-
- Week 4
-June 3
- 
-Balanced search trees (cont'd).
-Augmenting data structures.
-
- Chapter 14
- A1 due
-A2 out
-
-
- Week 5
-June 10
- 
-Hashing: basic definitions.
-Hashing: probabilistic analysis of hashing with chaining.
-
- Chapter 11 
-
- Week 6
-June 17
- Disjoint sets.
- Chapter 21 A2 due
-
- June 24
-Course break, no class.
-
-
- July 1
-Canada Day, no class again.
-
- Week 7
-July 8
- 
-Amortized analysis.
-Dynamic tables.
-
- Chapter 17 Midterm: July 8, 8:10pm - 9:10pm
-A3 out
- Week 8
-July 15
- 
-Graphs: basic definitions and data structures.
-Graphs: breadth-first search and applications.
-
- Chapter 22
-Notes on BFS
- 
-
- Week 9
-July 22
- Graphs: depth-first search and applications.
- Chapter 22 A3 due
-A4 out
-
-
- Week 10
-July 29
- Graphs: Minimum spanning trees and applications.
- Chapter 23, 35.2
-Notes on MST
- 
-
- Week 11
-August 5
- 
-Deterministic algorithms with probabilistic inputs
-				versus randomized algorithms: Quicksort.
-
- Chapter 5, 7 A4 due
-
- Week 12
-August 12
-
- 
-Lower bounds: decision trees; lower bounds for sorting.
-Lower bounds: adversary arguments; lower bounds for the MIN-MAX problem.
- Chapter 8.1, 9.1
-Notes on Min-Max
- 
-
-
-Tutorials
-
-
-Tutorial Notes by Jimmy Zhu
-Tutorial 6: Disjoint sets
-Tutorial 7: BFS
-Tutorial 8: Topological Sort
-Tutorial 9: Prim's Algorithm for MST
-Tutorial 10: Random Selection
-
-
-
-
-Homeworks
-
-
-Homework Guidelines (see Policies for details)
-
-Students may work on homeworks individually, or in groups of size two.
-Homework submissions must be typed and printed.
-Use of LaTeX is recommended. Here is the template for homework solutions.
-Submissons must include your name and student number (of both students if working in group).
-Submit hard copy with cover page to the CSC263 drop box in BA2220 by 5:40pm on due date.
-No late submissions will be accepted.
-Graded homeworks will be returned in lectures or tutorials.
-
-
-Assignment 1, due June 3: 
-Download A1 handout with cover page          Solutions and marking schemes
-
-Assignment 2, due June 17: 
-Download A2 handout with cover page          Solutions and marking schemes
-
-Assignment 3, due July 22: 
-Download A3 handout with cover page          Solutions and marking schemes
-
-Assignment 4, due August 5: 
-Download A4 handout with cover page          Solutions and marking schemes
-
-
-
-
-Exams
-
-
-Midterm
-When: July 8, 2014, 8:10pm - 9:10pm (tutorial time)
-Where: BA1130
-Aids allowed: None
-Bring you student card.
-
-Final Exam
-When: August 18, 2014, 7pm - 10pm
-Where: NR25 (map)
-Aids allowed: None
-Bring you student card.
-
-
-
-
-Policies
-
-
-Prerequisites
-Prerequisites are strictly enforced in this course. A prerequisite
-	  waiver is only granted if the student is able to demonstrate a satisfying
-	  level of knowledge of the missing course. If you think you are qualified
-	  for the waiver, please send an email to the instructor with the following
-	  information (by May 6, 2014):
-
-Your name.
-Your student number.
-The prerequisite that you are requesting a waiver for.
-The reason why you are qualified for this waiver.
-
-The requests will be handled case-by-case. An interview with the
-	  instructor may be required.
-
-Course forum policy
-We use Piazza
-	  as a platform for class discussions. When registering to the course, you
-	  must use your @mail.utoronto.ca or @utoronto.ca address as your Piazza
-	  email contact for this course. Here are the course guidelines for posting
-	  on Piazza:
-
-Take the time to formulate your postings clearly and concisely.
-Be courteous in your communications.
-Your postings must abide by the academic integrity policy and the
-		  homework collaboration policy. In particular, you should not ask for
-		  or offer hints on solutions to homework assignments. So posting a
-		  question such as "I am using this method to solve this problem, am I
-		  on the right track?" is not appropriate as it violates the homework
-		  collaboration policy.
-Your postings can be made anonymously to other students (at your
-		  discretion), but not to the instructor.
-
-The CSC263 teaching team (i.e., the instructor or teaching assistants)
-	  will endeavor to monitor the discussions on Piazza a couple of times a
-	  week.
-
-Academic integrity
-Academic integrity is essential to the University of Toronto and the
-	  University treats cases of cheating and plagiarism very seriously.
-	  Academic offences relevant to this course include using someone else's
-	  ideas or words without appropriate attribution; obtaining or providing
-	  unauthorised assistance on any assignment, test, or exam; misrepresenting
-	  your identity; falsifying or altering documentation; and violating the
-	  homework collaboration policy stated below.
-
-Homework collaboration policy
-In each homework you may collaborate with at most one other student
-	  who is currently taking CSC263H taught by Larry Zhang. If you collaborate
-	  with another student on a homework, you and your partner must submit only
-	  one copy of your solution (in this case, write both of your names on the
-	  cover page of the assignment). The solution will be graded in the usual
-	  way and both partners will receive the same mark. Collaboration involving
-	  more than two students is not allowed.
-
-Homework submission
-Each homework should be given to us, with its cover page, in the csc263
-  course drop box in BA2220, by 5:40pm sharp on the homework due date (usually a
-  Tuesday). A teaching assistant picks up the homework copies from this drop
-  box very shortly after the deadline, and any homework copy left in the drop
-  box after this pickup will not be marked (i.e., it will get 0 marks).
-
-Missed homework policy
-If you miss a homework deadline because of a medical or serious
-	  personal emergency, you must fill out the Special Consideration
-  Form and provide it to the instructor as soon as possible.  In case of a
-  medical emergency, you must also submit the UofT Verification of
-  Student Illness or Injury completed and signed by your physician. Please
-  check Frequently
-  Asked Questions on UofT Health Services. If we
-  judge your reason for missing a homework deadline to be valid, we will use
-  the average mark that you achieved in other homeworks as your mark for the
-  missed homework.
-
-Remarking policy
-If your remarking request concerns a simple addition error, see the
-  instructor. If, after reading the marking guide and the solution set of the
-  homework carefully, you wish to submit another kind of remarking request, you
-  should fill this
-  form, attach it to your homework assignment or test, and give it to the
-  instructor of the course no later than one week from the date the marked
-  assignment or test was made available to the class.  Remarking requests made
-  after this deadline will not be accepted.
-
-A remarking request of a homework or a test can cause the overall mark to
-  stay the same, increase or decrease: we can re-examine every question to see
-  whether: (1) we erroneously deducted points from a correct and clear answer,
-  or (2) we failed to deduct points from an incorrect or unclear answer. So we
-  can rectify the total mark up or down accordingly.
-
-Please submit a remarking request only if: (a) you have read and
-  completely understood the solution set and the marking guide that we posted,
-  and (b) you still think that your solution is correct and was mistakenly
-  marked as incorrect.
-
-Missed midterm exam policy
-If you miss the midterm test due to a medical or other serious personal
-  emergency, get in touch with your instructor immediately, fill out the Special
-  Consideration and provide it to the instructor as soon as possible. In
-  case of a medical emergency, you must also submit the UofT Verification of
-  Student Illness or Injury completed and signed by your physician. Please
-  check Frequently
-  Asked Questions on UofT Health Services. There
-  will be no make-up midterm test, but if we judge your reason for missing the
-  test to be valid, we will use your final examination mark to compute your
-  mark for the missed midterm test.
-
-
-
-
-Links
-
-
-CDF Website: For checking your grades of assignments and tests.
-Faculty of Art & Science important dates
-Old exams repository at UofT library
-Getting Started with LaTeX (and many more resources can be found using a search engine)
-TeXLive: a cross
-	  platform LaTeX distribution.
-
-
-
-
-  © 2014 Larry Yueli Zhang | Top 
 
 
 
