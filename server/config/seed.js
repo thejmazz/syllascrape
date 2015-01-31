@@ -7,6 +7,7 @@
 
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
+var Pytest = require('../api/pytest/pytest.model');
 
 Thing.find({}).remove(function() {
   Thing.create({
@@ -46,4 +47,14 @@ User.find({}).remove(function() {
       console.log('finished populating users');
     }
   );
+});
+
+Pytest.find({}).remove(function() {
+  Pytest.create({
+    name: 'test1'
+  }, {
+    name: 'test2'
+  }, function() {
+      console.log("populated pytest");
+  });
 });
