@@ -1,6 +1,9 @@
 'use strict';
 
 angular.module('syllascrapeApp')
+  .directive('angularFileUpload', function($scope, $upload){
+     
+  })
   .controller('MainCtrl', function ($scope, $http) {
     $scope.awesomeThings = [];
 

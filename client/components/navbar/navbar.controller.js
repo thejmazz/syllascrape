@@ -5,6 +5,9 @@ angular.module('syllascrapeApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    }, {
+      'title' : 'Files',
+      'link' : '/files'
     }];
 
     $scope.isCollapsed = true;
