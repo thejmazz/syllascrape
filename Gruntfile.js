@@ -80,14 +80,14 @@ module.exports = function (grunt) {
         ],
         tasks: ['newer:jshint:all', 'karma']
       },
-      injectSass: {
-        files: [
-          '<%= yeoman.client %>/{app,components}/**/*.{scss,sass}'],
-        tasks: ['injector:sass']
-      },
+      //injectSass: {
+        //files: [
+          //'<%= yeoman.client %>/{app,components}/**/*.{scss,sass}'],
+        //tasks: ['injector:sass']
+      //},
       sass: {
         files: [
-          '<%= yeoman.client %>/{app,components}/**/*.{scss,sass}'],
+          '<%= yeoman.client %>/app/styles/*.{scss,sass}'],
         tasks: ['sass', 'autoprefixer']
       },
       gruntfile: {
@@ -475,7 +475,7 @@ module.exports = function (grunt) {
           compass: false
         },
         files: {
-          '.tmp/app/app.css' : '<%= yeoman.client %>/app/app.scss'
+          '.tmp/app/app.css' : '<%= yeoman.client %>/app/styles/styles.scss'
         }
       }
     },
@@ -506,23 +506,23 @@ module.exports = function (grunt) {
       },
 
       // Inject component scss into app.scss
-      sass: {
-        options: {
-          transform: function(filePath) {
-            filePath = filePath.replace('/client/app/', '');
-            filePath = filePath.replace('/client/components/', '');
-            return '@import \'' + filePath + '\';';
-          },
-          starttag: '// injector',
-          endtag: '// endinjector'
-        },
-        files: {
-          '<%= yeoman.client %>/app/app.scss': [
-            '<%= yeoman.client %>/{app,components}/**/*.{scss,sass}',
-            '!<%= yeoman.client %>/app/app.{scss,sass}'
-          ]
-        }
-      },
+      //sass: {
+        //options: {
+          //transform: function(filePath) {
+            //filePath = filePath.replace('/client/app/', '');
+            //filePath = filePath.replace('/client/components/', '');
+            //return '@import \'' + filePath + '\';';
+          //},
+          //starttag: '// injector',
+          //endtag: '// endinjector'
+        //},
+        //files: {
+          //'<%= yeoman.client %>/app/app.scss': [
+            //'<%= yeoman.client %>/{app,components}/**/*.{scss,sass}',
+            //'!<%= yeoman.client %>/app/app.{scss,sass}'
+          //]
+        //}
+      //},
 
       // Inject component css into index.html
       css: {
@@ -569,7 +569,7 @@ module.exports = function (grunt) {
       return grunt.task.run([
         'clean:server',
         'env:all',
-        'injector:sass', 
+        //'injector:sass', 
         'concurrent:server',
         'injector',
         'wiredep',
@@ -581,7 +581,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'env:all',
-      'injector:sass', 
+      //'injector:sass', 
       'concurrent:server',
       'injector',
       'wiredep',
@@ -611,7 +611,7 @@ module.exports = function (grunt) {
       return grunt.task.run([
         'clean:server',
         'env:all',
-        'injector:sass', 
+        //'injector:sass', 
         'concurrent:test',
         'injector',
         'autoprefixer',
@@ -624,7 +624,7 @@ module.exports = function (grunt) {
         'clean:server',
         'env:all',
         'env:test',
-        'injector:sass', 
+        //'injector:sass', 
         'concurrent:test',
         'injector',
         'wiredep',
@@ -642,7 +642,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'injector:sass', 
+    //'injector:sass', 
     'concurrent:dist',
     'injector',
     'wiredep',
