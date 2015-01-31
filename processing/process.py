@@ -30,7 +30,8 @@ def main():
                     if evaluation != -1 and date != -1:
                         d[date] = evaluation
             cache.append(tokens)
-            cache = cache[1:]
+            if len(cache) > 3:
+                cache = cache[1:]
 
     print(cache)
     if d == {}:
