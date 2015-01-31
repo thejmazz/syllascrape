@@ -1,9 +1,7 @@
 
 
 
-
-CSC343 Winter 2015
-
+CSC 209 Course Syllabus Winter 2015
 
 
 
@@ -13,171 +11,202 @@ CSC343 Winter 2015
 
 
 
-CSC343
-Home
-Piazza
-MarkUs
-Anonymous Feedback
-More
+
+
+
+
+Toggle navigation
+
+
+
+
+CSC209H: Software Tools and Systems Programming
+
+
 
 
 Syllabus
-Assignments
-Tests
-CDF Labs
-Course Team
-
-
-
-Winter 2015
-
-
-
-
-
-Logistics
-
-
-
 
 Lectures
- 
 
+Assignments
 
-L0101/L2001
+Labs
 
+Tests
 
-L0201/L2201
+Grades
 
+Anonymous Feedback
 
-L5101/L2501
+Piazza
 
-
- MWF12 (MP102)
- M2 (LM161),WF2 (RW117)
- R6-9 (BA1130)
-
-
- Diane Horton
- Diane Horton
- David Liu
+MarkUs
 
 
 
 
 
 
-
-Office Hours
- M4-6 (David, BA4260); WRF3 (Diane, BA4236)
+CSC 209 Course Syllabus Winter 2015 
 
 
 
+Overview
+Welcome to CSC209: Software Tools and Systems Programming. The course is designed to introduce software techniques and tools used in a Unix/Linux environment. We will study C, a low-level programming language, and use it to examine the interface between the operating system and user-level programs.
+Contact information
+Instructor L0101 and L5101: Karen Reid
 
-Contact: Website, Email, Discussion Board
-Information from us: The course website http://www.cdf.toronto.edu/~csc343h/winter is required reading. It contains assignment handouts and other essential material. The course discussion board is on Piazza. You are responsible for reading all postings made by us or the TAs.
-Questions from you: Please use Piazzato ask questions about assignments and course lecture material so that everyone can benefit. For personal questions, email us from your UofT address. Please include "343" in the subject line and include your full name and CDF account.
-Diane's email: dianeh at cs dot utoronto dot ca
-David's email: liudavid at cs dot toronto dot edu
-We will try to respond to email and Piazza postings by the end of the next business day. However, it may take longer, especially near due dates. Try to start assignments early in case you have questions. If you do not hear back quickly, we are always available during office hours to help.
-Prerequisites
-Arts and Science students: If you don't have the course prerequisites listed in the calendar entry, contact Diane Horton immediately to see whether you may remain in the course. Include your name, student number, ROSI academic history, and why you feel you are well prepared to take the course. If we don't issue a waiver, the registrar will remove you from the course.
-Engineering students: If you don't have the course prerequisites listed in your calendar, your registrar may require that we give you permission to take the course. If so, email Diane Horton with your name, student number, ROSI academic history, and why you feel you are well prepared to take the course.
-Active Classes, and Preparation for Them
-During class time in this course, your instructor will present material and demonstrate problem solving for part of the time. There will also regularly be activities that you participate in. Be prepared to get your gears turning in class! There is good evidence, and our experience also shows, that active learning works better than passively listening to a lecture. We also think it's a lot more fun. We will typically use all three hours (lecture and tutorial times) for these kinds of classes, led by your instructor.
-During some in-class activities, students will see and discuss each other's solutions to problems. This is your official notice (per the University's privacy regulations) that your personal information will be used in this way. If you wish to opt out of these particular activities, please notify us at the beginning of the term. Opting out will not directly impact your mark in the course, but you will lose a valuable learning opportunity.
-To prepare for these active classes, you will be doing weekly activities outside of class. These will involve learning some material on your own, through readings or videos, and practising things we've learned in class. They will always culminate in some small exercises that you hand in. These weekly activities are not intended to be greatly time consuming.
-Course Marking Scheme
+
+ Email: reid -at- cdf.toronto.edu
+
+ Office hours: TBA
+
+ Lectures: L0101 Mondays and Wednesdays 12-1 MP 203
+
+   L5101 Wednesdays 6-8pm BA 1130
 
 
 
-Component
+Instructor L0201: Bogdan Simion
 
 
-Weight
+ Email: bogdan -at- cs.toronto.edu
 
+ Office hours: BA4261, M11-12, W11-12
 
-Description
-
-
-Due
-
-
- Lecture Preparation
- 10% (1% each)
- 10 weekly lecture preparation activities
- Sundays 11:00pm  (weeks 2-12, except week 7)
-
-
- Assignment 1
- 10%
- Relational Algebra
- Tuesday, February 3 8:00pm
-
-
- Assignment 2
- 10%
- Interactive and Embedded SQL
- Tuesday, March 10 8:00pm
-
-
- Assignment 3
- 10%
- XML Query Languages (XPATH, XQuery)Design & Normalization
- Tuesday, March 31 8:00pm
-
-
- Midterm Test
- 15%
- Topic coverage to be announced
- L0101: Wednesday, February 25 at 12:00 noon  L0201: Wednesday, February 25 at 2:00pm  L5101: Thursday, February 26 at 6:00pm
-
-
- Final exam
- 45%
- Cumulative (all topics covered) Note: In order to pass this course, you must earn at least 40% on the final exam.
- During the exam period
-
-
-
-Resources
-These two resources are suggested to support your learning in the course:
-
-The textbook "A First Course in Database Systems" by Jeffrey D. Ullman and Jennifer Widom, 2008 (3rd Edition), available new and used at the UofT bookstore, and online from the publisher, Chapters, or Amazon. It is also available on two-hour loan at the Engineering Library in the Sandford Fleming Building.
-The online mini-courses by Jennifer Widom at Stanford University.
-
-Working with a Partner
-You have the option of partnering with one other CSC343 student for your assignments, and we encourage you to do so. You may choose your own partner, from any section of the course on the St George campus, and it need not be the same person for each assignment. Once you begin working on an assignment, you may not dissolve your partnership without our permission. Both partners will receive the same mark for joint assignments.
-Working with a partner has the potential to lighten your workload or to increase it, depending on how well you work together. Remember that you are responsible for learning the course material underlying all parts of the assignments. You will have the most success if you truly work together.
-Assignment Policies
-Assignments are due on Tuesdays at 8:00 pm sharp. Assignments must be submitted electronically, using the MarkUs online system. Log in with your CDF username and password. Be sure to confirm that you have submitted all the required files and the correct version of each; we cannot accept missing files or a different version of an already-submitted file after the due date. Code that you submit to us for grading must work on the CDF machines in order to earn credit.
-Late Assignments
-We recognize that unexpected problems sometimes make it difficult to submit assignments on time. For this reason, we will be using grace tokens to give you flexibility with assignment deadlines.
-Each student will receive six grace tokens; each grace token can be used for a two-hour extension for an assignment. For example, you may choose to use all six grace tokens on the first assignment, extending its deadline by twelve hours. Or, you may wish to use two tokens for each assignment, extending each deadline by four hours.
-MarkUs automatically deducts grace tokens when you submit an assignment late - you do not need to explicitly say you are using a grace token. If you work with a partner on an assignment, grace tokens are deducted from every team member, not just one of you. For example, if Alice and Bob are working together, and wish to submit an assignment 3 hours late, they must both have at least two grace tokens remaining.
-You may not use grace tokens to extend the deadline of the weekly lecture prep activities.
-Special Consideration
-If you are unable to complete homework or if you miss a test due to major illness or other circumstances completely outside of your control, get in touch with us immediately if you want to receive special consideration.
-In order to receive special consideration, you must fill out a Request for Special Consideration Form. Bring the form to your instructor right away, together with your supporting documentation. In the case of illness, please have a doctor complete a Verification of Student Illness or Injury Form. For other emergencies, be prepared to provide some kind of documentation.
-IMPORTANT: Notify us as soon as possible if you find yourself in such a situation. You can contact us even before you have the documentation; we won't be able to tell you at that point what accommodation you may receive, but can answer other questions and offer advice. It is always easier to resolve situations earlier rather than later.
-Remark Requests
-If you feel there was an error in the marking of an assignment or test, you may request that it be remarked. Print, fill out and submit a Remark Request Form. You must give a specific reason for the request, referring to a possible error or omission by the marker.
-For prompt turnaround, remark requests must be received within one week of when the item was returned.
-Academic Integrity
-The work you submit must be your own. It is an academic offence to copy someone else's work. This includes their code, their words, and even their ideas. Whether you copy or let someone else copy, it is an offence. Academic offences are taken very seriously.
-At the same time, we want you to benefit from working with other students. Obviously, work done with your partner is a joint effort. You are also welcome to work appropriately with students other than your partner. It is appropriate to discuss course material and technology related to assignments, and we encourage you to do so. For example, you may work through examples that help you understand course material or a new technology, or help each other configure your system to run a supporting piece of software. You may also discuss assignment requirements.
-However, other than between partners, collaboration on assignment solutions is strictly forbidden. The most certain way to protect yourself is not to discuss assignment solutions or the ideas behind them with students other than your partner. Certainly you must not let others see your assignment solutions, even in draft form. Please don't cheat. We want you to succeed and are here to help if you are having difficulty.
-Accessibility Needs
-The University of Toronto is committed to accessibility. If you require accommodations or have any accessibility concerns, please visit Accessibility Services as soon as possible.
+ Lectures: L0201 Mondays and Wednesdays 10-11 am WI 1016
 
 
 
 
+Suggested Text book(s):
+
+King, C Programming: A Modern Approach. W. W. Norton and Company, 2008 (highly recommended)
+Kerrisk, Linux Programming Interface. No Starch Press, 2010 (errata)
 
 
 
-      Site design by Deyu Wang (dyw999 at gmail dot com)
-    
+Website and Discussion Board: The course website contains lecture notes, 
+assignment handouts, and, most importantly, a link to the discussion board. 
+The board can get you fast, accurate response to your questions – but it 
+only works if everyone participates! We will also use the boards to post 
+announcements and updates, so the discussion board is required daily 
+reading.
+
+
+Email: 
+Please use email for personal issues and the discussion board for 
+all other course-related questions. I try to respond to email by the end of 
+the next day. However, due to volume, it may take longer, especially on 
+weekends. (I am often not able to answer email more than once on the wee
+kend.)
+
+Anonymous Feedback: 
+If you have feedback about the course, the web page includes a link to an anonymous email form. (You also have the option of including your name.) Since the sender cannot be determined, comments sent through the feedback system are considered public, and they may receive a response at the beginning of class or on the discussion board.
+
+Grading Scheme and Assignment Schedule
+
+
+
+Type of Work Topics WeightDue date
+
+
+ Exercises    4% 10pm on the Fridays
+
+ A1 Basic C  8% Thursday Jan 29
+
+ A2 C and pointers  10% Thursday Feb 26
+
+ Midterm Shell and C  15% Wednesday March 4
+
+ A3 Mini Shell  10% Monday March 16
+
+ A4 Network Server  8% Thursday April 2
+
+ Final Exam Everything  45% See exam schedule
+
+
+To pass the course you must receive at least 40% on the final exam. The highest mark you will receive if your grade on the final exam is less than 40% is 47%.
+Any section of an assignment in which the C program does not compile on CDF will receive a grade of 0. If you can explain clearly in a remarking request how to fix the problem, your program will be remarked with a 20% penalty. Errors in submission such as missing files, incorrectly named files, putting files in the wrong place may be graded with a 20% penalty.
+Policies
+
+Late Work: 
+All assignments are submitted electronically and are due at 10 p.m. sharp
+on the due date. Each student begins the semester with three grace day tokens. At most two grace days may be used for a single assignment.
+Submitting an assignment up to 1 day (24 hours) late uses one token. Submitting
+an assignment up to 2 days (48 hours) late uses two tokens. Once your tokens
+have been used late assignments will not be accepted. Grace days may not be
+used for labs. Please note that 10:01 p.m. will be considered late, and
+ensure that your work is not submitted at the very last second. Because you
+will be using version control, it is very easy to commit regularly to avoid
+running into the deadline.
+
+Remarking requests that result from incorrect submissions will receive a 20% penalty.
+
+
+Religious Holidays:
+If a religious holiday will keep you from completing any assigned work, please
+let me know as soon as possible (but no later than two weeks before the due
+date), and we will work out a mutually agreeable accommodation.
+
+
+Emergencies: 
+In the event of an illness or other catastrophe, obtain appropriate
+documentation (e.g., medical certificate) and contact me by email within 48
+hours of the due date. It is always easier to make alternate arrangements
+before a due date, so please inform me as soon as you know that you will need
+accommodation.
+
+
+Re-mark Requests: 
+If a piece of work has been mis-marked or if you believe the rubric used to
+evaluate the work is not appropriate, you may request a re-mark. For a re-mark
+to succeed, you must clearly and concisely express what you believe was
+mis-marked. To request a re-mark, use the form for the assignment on MarkUs. 
+Requests must be submitted within 2 weeks of the marks being returned.
+
+
+Academic Integrity: 
+All of the work you submit must be done by you and your work must not be
+submitted by someone else. Plagiarism is academic fraud and is taken very
+seriously. The department uses software that compares programs for evidence of
+similar code. Please read the Rules and
+Regulations
+from the U of T Calendar (especially the Code of Behaviour on Academic
+Matters). Here are a couple of guidelines to help you avoid plagiarism: - Never
+look at another student’s or group’s assignment solution or idea for a
+solution, whether it is on paper or on the computer screen, and don’t allow
+your solution to be viewed by or come into the possession of another student.
+Maintain absolute control of your work – including notes and partial solutions
+– at all times. - We encourage you to discuss course concepts and to study for
+exams with other students, but any work that is submitted should be your own.
+The easiest way to avoid plagiarism is to only discuss submitted work with your
+partner or the instructor. Similarly, google (and wikipedia) may help you with
+course material, but do not use the internet to look for solutions to the
+assignment problems.
+
+
+Accessibility Needs:
+The University of Toronto is committed to accessibility. If you require
+accommodations for a disability, or have any accessibility concerns about the
+course, the classroom or course materials, please contact Accessibility
+Services as soon as possible: disability.services@utoronto.ca or
+http://studentlife.utoronto.ca/accessibility
+
+
+
+
+
+
+
+          © 2015 Karen Reid
+          
+            powered by
+            Jekyll-Bootstrap-3
+            and Twitter Bootstrap 3.0.3
+
+
 
 
 
