@@ -9,22 +9,31 @@ October,November,December,Jan,Feb,Mar,Apr,Jun,Jul,Aug,Sep,Oct,Nov,Dec".split(","
 def main():
     if len(sys.argv) != 2:
         print("Invalid argument.")
-        return
+        sys.exit()
 
     try:
         file = open(sys.argv[1], "r")
     except IOError:
         print("File not found.")
-        return
+        sys.exit()
 
     for raw_line in file:
         for month in months:
             if (month in raw_line):
                 tokens = word_tokenize(raw_line)
                 date = find_date(tokens, month)
-                evaluation = look_around(tokens, valid_assessment, tokens.index(month), True)
+                evaluation = find_eval(tokens, month)
                 if evaluation != -1: print(evaluation, "–", date)
                 break
+
+def find_eval(tokens, month):
+    evaluation = look_around(tokens, valid_assessment, tokens.index(month))
+    if evaluation == -1: return -1
+
+    possible_num_i = tokens.index(evaluation) + 1
+    if tokens[possible_num_i].isdigit():
+        evaluation += " " + tokens[possible_num_i]
+    return evaluation
 
 
 def find_date(tokens, month):
@@ -50,21 +59,20 @@ def find_date(tokens, month):
 
     return "-".join([month_num, day, year])
 
-def look_around(tokens, checker, initial, check_forward=True):
+def look_around(tokens, checker, initial_i):
     '''
     (list of str, int, func, [bool]) -> int
     Incrementally searches around a month in tokens
     for a token that checker evaluates.
     '''
 
-    index = initial
+    index = initial_i
 
     change = 0;
     try:
         # This block checks increasingly ahead of and behind the original index
-        while ((check_forward and index + change < len(tokens)) or index - change >= 0):
-            if check_forward:
-                if ((index + change) < len(tokens) and checker(tokens[index + change])):
+        while ((index + change < len(tokens)) or index - change >= 0):
+            if ((index + change) < len(tokens) and checker(tokens[index + change])):
                     return tokens[index + change]
             
             if ((index - change) >= 0 and checker(tokens[index - change])):
