@@ -13,7 +13,7 @@
       "html": true,
       "sass": true,
       "ngroute": true,
-      "bootstrap": true,
+      "bootstrap": false,
       "uibootstrap": false,
       "mongoose": true,
       "auth": true,
