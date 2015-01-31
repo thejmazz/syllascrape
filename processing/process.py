@@ -1,38 +1,60 @@
 from nltk import *
 import re
 import sys
+import urllib.request
 
 months = "January,February,March,April,May,June,July,August,September,\
 October,November,December,Jan,Feb,Mar,Apr,Jun,Jul,Aug,Sep,Oct,Nov,Dec".split(",")
 
 
-def main():
-    
-    if len(sys.argv) != 2:
+def main():  
+    if not (2<= len(sys.argv) <= 3):
         print("Invalid argument.")
         sys.exit()
 
-    out = open("output.csv", "w")
-    with open(sys.argv[1], "r") as file:
-        for raw_line in file:
-            tokens = word_tokenize(raw_line)
+    d = {}
+    if len(sys.argv) == 3 and sys.argv[1] == '-u':
+        urllib.request.urlretrieve(sys.argv[2], 'tmp.txt')
+    elif len(sys.argv) == 3:
+        print("Invalid option.")
+        sys.exit()
+    
+    cache = [[], [], [], []]
+    with open('tmp.txt') as file:
+        for i, raw_line in enumerate(file):
+            tokens = word_tokenize(str(raw_line))
             for token in tokens:
                 if (token in months):
                     date = find_date(tokens, token)
-                    evaluation = find_eval(tokens, token)
-                    if evaluation != -1:
-                        print(evaluation, "–", date)
-                        out.write((evaluation + " , " + date + "\n"))
-                    
+                    evaluation = find_eval(tokens, token, cache, i)
+                    if evaluation != -1 and date != -1:
+                        d[date] = evaluation
+            cache.append(tokens)
+            cache = cache[1:]
 
-def find_eval(tokens, month):
+    print(cache)
+    if d == {}:
+        print("No dates found.")
+
+    with open("output.csv", "w") as out:
+        for date, evaluation in d.items():
+            print(evaluation + " – " + date)
+            out.write((evaluation + "," + date + "\n"))
+
+def find_eval(tokens, month, cache=None, i=None):
     evaluation = look_around(tokens, valid_assessment, tokens.index(month))
-    if evaluation == -1: return -1
+    if evaluation == -1: 
+        if cache != None:
+            more_tokens = tokens
+        return -1
+    
+    pattern = re.compile("assignment|test|essay|quiz|exercise|midterm|lab|[at][t]?[0-9]")
+    matched_evaluation = pattern.match(evaluation.lower()).group()
 
     possible_num_i = tokens.index(evaluation) + 1
     if tokens[possible_num_i].isdigit():
-        evaluation += " " + tokens[possible_num_i]
-    return evaluation
+        matched_evaluation += " " + tokens[possible_num_i]
+    return matched_evaluation
 
 
 def find_date(tokens, month):
@@ -60,6 +82,8 @@ def find_date(tokens, month):
     if len(day) == 1:
         day = "0" + day
 
+    if day == "26" and month == "03": print(tokens)
+
 
     return "-".join([month_num, day, year])
 
@@ -78,7 +102,6 @@ def look_around(tokens, checker, initial_i):
         while ((index + change < len(tokens)) or index - change >= 0):
             if ((index + change) < len(tokens) and checker(tokens[index + change])):
                     return tokens[index + change]
-            
             if ((index - change) >= 0 and checker(tokens[index - change])):
                 return tokens[index - change]
             change += 1
